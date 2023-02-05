@@ -1,11 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
-using UnityEditor.Rendering.LookDev;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UI;
 using System;
 
 public class PlayerFunctions : MonoBehaviour
@@ -130,6 +127,9 @@ public class PlayerFunctions : MonoBehaviour
     //Take move input from player
     public void MoveInput(InputAction.CallbackContext context)
     {
+        if (_isDead)
+            return;
+
         if (context.action.name == "MoveUp")
         {
             _isMovingUp = !_isMovingUp;
@@ -321,6 +321,9 @@ public class PlayerFunctions : MonoBehaviour
 
     public void PlantBomb()
     {
+        if (_isDead)
+            return;
+
         if (_bombList.Count < _bombCap)
             OnPlantBomb?.Invoke(this, new OnPlantBombEventargs { bombPower = _power, player = this });
     }
