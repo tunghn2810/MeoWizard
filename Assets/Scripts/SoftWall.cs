@@ -5,7 +5,7 @@ using UnityEngine;
 public class SoftWall : MonoBehaviour
 {
     private Animator _anim;
-    private GameObject _item;
+    [SerializeField] private GameObject _item;
 
     private bool _isDestroyed = false;
 
@@ -13,18 +13,15 @@ public class SoftWall : MonoBehaviour
     {
         _anim = GetComponent<Animator>();
     }
-
-    private void Start()
-    {
-        RaycastHit2D itemCheck = Physics2D.Raycast(transform.position, Vector2.up, 0.1f, LayerMask.GetMask("Default"));
-        if (itemCheck)
-            _item = itemCheck.collider.gameObject;
-    }
-
     private void Update()
     {
         if (_isDestroyed)
             Destroy(gameObject);
+    }
+
+    public void AddItem(GameObject item)
+    {
+        _item = item;
     }
 
     public void Destroyed()

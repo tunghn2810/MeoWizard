@@ -8,25 +8,20 @@ using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using System;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerFunctions : MonoBehaviour
 {
-    //Player number
-    public int _playerNum;
-
     //References
     private Rigidbody2D _rgbd;
     private Animator _animator;
-    private PlayerInputActions _playerInputActions;
 
     //Layers
     private LayerMask _obstacleLayer;
     private LayerMask _bombLayer;
     private LayerMask _directionCheckLayer;
-    [SerializeField] private Tile _currentTile;
 
     //Movement
     private Vector2 _moveDirection = Vector2.zero;
-    private float _moveSpeed = 0.1f;
+    [SerializeField] private float _moveSpeed;
 
     //For checking obstacle and sliding when bumping into one
     [SerializeField] private Transform _raycastOrigin;
@@ -41,22 +36,22 @@ public class PlayerMovement : MonoBehaviour
     //For when player holds multiple keys at once
     private bool _currentlyHorz = false;
     private int _multiInput = 0;
-    [SerializeField] private List<string> _inputs = new List<string>();
-    [SerializeField] private string _currentInput = "";
-    [SerializeField]private bool[] _canGoDirection = { true, true, true, true }; //Up Down Left Right
+    private List<string> _inputs = new List<string>();
+    private string _currentInput = "";
+    private bool[] _canGoDirection = { true, true, true, true }; //Up Down Left Right
 
     //Movement states
     private bool _isMovingUp = false;
     private bool _isMovingDown = false;
     private bool _isMovingLeft = false;
-    private bool _isMovingRight= false;
+    private bool _isMovingRight = false;
 
     //For bomb planting
     public event EventHandler<OnPlantBombEventargs> OnPlantBomb;
     public class OnPlantBombEventargs : EventArgs
     {
         public int bombPower;
-        public PlayerMovement player;
+        public PlayerFunctions player;
     }
     private List<GameObject> _bombList = new List<GameObject>();
 
@@ -67,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
 
     private int _bombCap = 2;
     public int BombCap { get => _bombCap; set => _bombCap = value; }
-    private const int MAX_BOMBCAP = 5;
+    private const int MAX_BOMBCAP = 10;
 
     private bool _isDead = false;
 
@@ -79,21 +74,6 @@ public class PlayerMovement : MonoBehaviour
         _obstacleLayer = LayerMask.GetMask("Obstacle", "SoftWall");
         _bombLayer = LayerMask.GetMask("Bomb");
         _directionCheckLayer = LayerMask.GetMask("Obstacle", "Bomb", "SoftWall");
-
-        _playerInputActions = new PlayerInputActions();
-        _playerInputActions.Player_1.Enable();
-
-        _playerInputActions.Player_1.MoveUp.performed += MoveInput;
-        _playerInputActions.Player_1.MoveDown.performed += MoveInput;
-        _playerInputActions.Player_1.MoveLeft.performed += MoveInput;
-        _playerInputActions.Player_1.MoveRight.performed += MoveInput;
-
-        _playerInputActions.Player_1.MoveUp.canceled += MoveInput;
-        _playerInputActions.Player_1.MoveDown.canceled += MoveInput;
-        _playerInputActions.Player_1.MoveLeft.canceled += MoveInput;
-        _playerInputActions.Player_1.MoveRight.canceled += MoveInput;
-
-        _playerInputActions.Player_1.A.performed += PlantBomb;
     }
 
     private void FixedUpdate()
@@ -148,7 +128,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     //Take move input from player
-    private void MoveInput(InputAction.CallbackContext context)
+    public void MoveInput(InputAction.CallbackContext context)
     {
         if (context.action.name == "MoveUp")
         {
@@ -203,7 +183,7 @@ public class PlayerMovement : MonoBehaviour
             if (_slideForward)
                 _moveDirection = _flip * checkDirection;
             else
-                _moveDirection = _flip * - 1f * checkDirection;
+                _moveDirection = _flip * -1f * checkDirection;
         else
         {
             _raycastOrigin.eulerAngles = rotation;
@@ -339,7 +319,7 @@ public class PlayerMovement : MonoBehaviour
         _inputs.Add(toMove);
     }
 
-    private void PlantBomb(InputAction.CallbackContext context)
+    public void PlantBomb()
     {
         if (_bombList.Count < _bombCap)
             OnPlantBomb?.Invoke(this, new OnPlantBombEventargs { bombPower = _power, player = this });
@@ -378,8 +358,6 @@ public class PlayerMovement : MonoBehaviour
         //Check when entering a new tile
         if (collision.gameObject.layer == LayerMask.NameToLayer("Grass"))
         {
-            _currentTile = collision.transform.GetComponent<Tile>();
-
             //Check if currently moving horizontally or vertically
             if (_moveDirection.x == 0)
                 _currentlyHorz = false;

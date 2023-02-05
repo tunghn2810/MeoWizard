@@ -10,7 +10,7 @@ public class Tile : MonoBehaviour
     [SerializeField] private List<GameObject> players;
     public List<GameObject> Players { get => players; set => players = value; }
 
-    private void SpawnBomb(object sender, PlayerMovement.OnPlantBombEventargs e)
+    private void SpawnBomb(object sender, PlayerFunctions.OnPlantBombEventargs e)
     {
         if (!_hasBomb)
         {
@@ -32,7 +32,7 @@ public class Tile : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             players.Add(collision.gameObject);
-            collision.gameObject.GetComponent<PlayerMovement>().OnPlantBomb += SpawnBomb;
+            collision.gameObject.GetComponent<PlayerFunctions>().OnPlantBomb += SpawnBomb;
         }
     }
 
@@ -46,7 +46,7 @@ public class Tile : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             players.Remove(collision.gameObject);
-            collision.gameObject.GetComponent<PlayerMovement>().OnPlantBomb -= SpawnBomb;
+            collision.gameObject.GetComponent<PlayerFunctions>().OnPlantBomb -= SpawnBomb;
         }
     }
 }

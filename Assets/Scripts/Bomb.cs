@@ -29,8 +29,8 @@ public class Bomb : MonoBehaviour
     private bool _isTriggered = false;
     public bool IsTriggered { get => _isTriggered; set => _isTriggered = value; }
 
-    private PlayerMovement _player;
-    public PlayerMovement Player { get => _player; set => _player = value; }
+    private PlayerFunctions _player;
+    public PlayerFunctions Player { get => _player; set => _player = value; }
 
 
     private void Awake()

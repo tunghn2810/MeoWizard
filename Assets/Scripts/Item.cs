@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class Item : MonoBehaviour
 {
@@ -11,9 +10,8 @@ public class Item : MonoBehaviour
 
     private bool _isDestroyed = false;
 
-    //Bomb types: 0 = Bomb, 1 = Fire
-    private int _bombType;
-    public int BombType { get => _bombType; }
+    //Item types: 0 = Bomb, 1 = Fire
+    private int _itemType;
 
     private void Awake()
     {
@@ -22,9 +20,9 @@ public class Item : MonoBehaviour
         _ring = transform.GetChild(1).gameObject;
 
         if (_type.GetComponent<SpriteRenderer>().sprite.name == "Item_Bomb")
-            _bombType = 0;
+            _itemType = 0;
         else if (_type.GetComponent<SpriteRenderer>().sprite.name == "Item_Fire")
-            _bombType = 1;
+            _itemType = 1;
 
         _type.GetComponent<SpriteRenderer>().enabled = false;
         _ring.GetComponent<SpriteRenderer>().enabled = false;
@@ -59,13 +57,13 @@ public class Item : MonoBehaviour
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            if (_bombType == 0)
+            if (_itemType == 0)
             {
-                collision.gameObject.GetComponent<PlayerMovement>().IncreaseBombCap();
+                collision.gameObject.GetComponent<PlayerFunctions>().IncreaseBombCap();
             }
-            else if (_bombType == 1)
+            else if (_itemType == 1)
             {
-                collision.gameObject.GetComponent<PlayerMovement>().IncreasePowerp();
+                collision.gameObject.GetComponent<PlayerFunctions>().IncreasePowerp();
             }
 
             EndDestroyed();
