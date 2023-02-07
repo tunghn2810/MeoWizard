@@ -34,11 +34,11 @@ public class P2Input : MonoBehaviour
 
     private void MoveInput(InputAction.CallbackContext context)
     {
-        _playerFunctions.MoveInput(context);
+        InputProcessor.Instance.DirectionalButton(context, _playerFunctions);
     }
 
     private void PlantBomb(InputAction.CallbackContext context)
     {
-        _playerFunctions.PlantBomb();
+        InputProcessor.Instance.AButton(context, _playerFunctions);
     }
 }

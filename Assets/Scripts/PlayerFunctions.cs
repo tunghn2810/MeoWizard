@@ -33,8 +33,8 @@ public class PlayerFunctions : MonoBehaviour
     //For when player holds multiple keys at once
     private bool _currentlyHorz = false;
     private int _multiInput = 0;
-    private List<string> _inputs = new List<string>();
-    private string _currentInput = "";
+    private List<int> _inputs = new List<int>();
+    private int _currentInput; //0-1-2-3 = Up-Down-Left-Right
     private bool[] _canGoDirection = { true, true, true, true }; //Up Down Left Right
 
     //Movement states
@@ -82,28 +82,28 @@ public class PlayerFunctions : MonoBehaviour
         if (_inputs.Count > 0)
             _currentInput = _inputs[0];
         else
-            _currentInput = "";
+            _currentInput = -1; //-1 = No input
 
         //Process input
-        if (_currentInput == "MoveUp")
+        if (_currentInput == 0)
         {
             MoveInputProcess(Vector2.up);
             _animator.SetFloat("moveDirectionX", 0);
             _animator.SetFloat("moveDirectionY", 1);
         }
-        if (_currentInput == "MoveDown")
+        if (_currentInput == 1)
         {
             MoveInputProcess(Vector2.down);
             _animator.SetFloat("moveDirectionX", 0);
             _animator.SetFloat("moveDirectionY", -1);
         }
-        if (_currentInput == "MoveLeft")
+        if (_currentInput == 2)
         {
             MoveInputProcess(Vector2.left);
             _animator.SetFloat("moveDirectionX", -1);
             _animator.SetFloat("moveDirectionY", 0);
         }
-        if (_currentInput == "MoveRight")
+        if (_currentInput == 3)
         {
             MoveInputProcess(Vector2.right);
             _animator.SetFloat("moveDirectionX", 1);
@@ -125,45 +125,45 @@ public class PlayerFunctions : MonoBehaviour
     }
 
     //Take move input from player
-    public void MoveInput(InputAction.CallbackContext context)
+    public void MoveInput(int direction) //0-1-2-3 = Up-Down-Left-Right
     {
         if (_isDead)
             return;
 
-        if (context.action.name == "MoveUp")
+        if (direction == 0)
         {
             _isMovingUp = !_isMovingUp;
-            MoveInputQueue(_isMovingUp, context.action.name);
+            MoveInputQueue(_isMovingUp, direction);
         }
-        if (context.action.name == "MoveDown")
+        if (direction == 1)
         {
             _isMovingDown = !_isMovingDown;
-            MoveInputQueue(_isMovingDown, context.action.name);
+            MoveInputQueue(_isMovingDown, direction);
         }
-        if (context.action.name == "MoveLeft")
+        if (direction == 2)
         {
             _isMovingLeft = !_isMovingLeft;
-            MoveInputQueue(_isMovingLeft, context.action.name);
+            MoveInputQueue(_isMovingLeft, direction);
         }
-        if (context.action.name == "MoveRight")
+        if (direction == 3)
         {
             _isMovingRight = !_isMovingRight;
-            MoveInputQueue(_isMovingRight, context.action.name);
+            MoveInputQueue(_isMovingRight, direction);
         }
     }
 
     //Add and remove input from the move input queue
-    private void MoveInputQueue(bool isMovingDirection, string actionName)
+    private void MoveInputQueue(bool isMovingDirection, int actionNum)
     {
         if (isMovingDirection)
         {
             _multiInput += 1;
-            _inputs.Add(actionName);
+            _inputs.Add(actionNum);
         }
         else
         {
             _multiInput -= 1;
-            _inputs.Remove(actionName);
+            _inputs.Remove(actionNum);
         }
     }
 
@@ -314,7 +314,7 @@ public class PlayerFunctions : MonoBehaviour
     //Move the top input back to the bottom of the movement input queue
     private void MoveInputBack()
     {
-        string toMove = _inputs[0];
+        int toMove = _inputs[0];
         _inputs.Remove(toMove);
         _inputs.Add(toMove);
     }
@@ -373,11 +373,11 @@ public class PlayerFunctions : MonoBehaviour
             //Check if player is holding multiple move input
             if (_multiInput > 1 && _canGoDirection.Contains(true))
             {
-                if (_currentlyHorz && (_canGoDirection[0] || _canGoDirection[1]) && (_currentInput != "MoveUp" || _currentInput != "MoveDown"))
+                if (_currentlyHorz && (_canGoDirection[0] || _canGoDirection[1]) && (_currentInput != 0 || _currentInput != 1))
                 {
                     MoveInputBack();
                 }
-                else if (!_currentlyHorz && (_canGoDirection[2] || _canGoDirection[3]) && (_currentInput != "MoveUp" || _currentInput != "MoveDown"))
+                else if (!_currentlyHorz && (_canGoDirection[2] || _canGoDirection[3]) && (_currentInput != 0 || _currentInput != 1)) //CHECK THIS
                 {
                     MoveInputBack();
                 }
