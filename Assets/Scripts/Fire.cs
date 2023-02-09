@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Fire : MonoBehaviour
 {
-    private Bomb bomb;
+    private Bomb _bomb;
 
     private void Awake()
     {
-        bomb = GetComponentInParent<Bomb>();
+        _bomb = GetComponentInParent<Bomb>();
     }
 
     public void EndExplode()
     {
-        bomb.IsExplodeEnd = true;
+        _bomb.IsExplodeEnd = true;
     }
 }

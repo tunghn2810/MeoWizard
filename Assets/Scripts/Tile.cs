@@ -18,6 +18,7 @@ public class Tile : MonoBehaviour
             GameObject newBomb = Instantiate(_bombPrefab, bombPosition, Quaternion.identity);
             newBomb.GetComponent<Bomb>().Power = e.bombPower;
             newBomb.GetComponent<Bomb>().Player = e.player;
+            newBomb.GetComponent<Bomb>().IsOneShot = e.player.IsOnFire;
             e.player.AddBomb(newBomb);
         }
     }

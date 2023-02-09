@@ -62,6 +62,8 @@ public class PlayerFunctions : MonoBehaviour
     private const int MAX_BOMBCAP = 10;
 
     private bool _isDead = false;
+    private bool _isOnFire = false;
+    public bool IsOnFire { get => _isOnFire; set => _isOnFire = value; }
 
     private void Start()
     {
@@ -344,10 +346,19 @@ public class PlayerFunctions : MonoBehaviour
             _bombCap += 1;
     }
 
-    public void IncreasePowerp()
+    public void IncreasePower()
     {
         if (_power < MAX_POWER)
             _power += 1;
+    }
+    
+    public void OnFire()
+    {
+        _isOnFire = true;
+        //On fire anim: ON
+        Invoke("Die", 10.0f);
+        _power = MAX_POWER;
+        _moveSpeed *= 1.2f;
     }
 
     public void Die()
@@ -386,6 +397,10 @@ public class PlayerFunctions : MonoBehaviour
 
         //Check when getting hit by fire
         if (collision.gameObject.tag == "Fire")
+        {
+            OnFire();
+        }
+        else if (collision.gameObject.tag == "FireOneShot")
         {
             Die();
         }

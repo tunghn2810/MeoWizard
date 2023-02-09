@@ -63,7 +63,7 @@ public class Item : MonoBehaviour
             }
             else if (_itemType == 1)
             {
-                collision.gameObject.GetComponent<PlayerFunctions>().IncreasePowerp();
+                collision.gameObject.GetComponent<PlayerFunctions>().IncreasePower();
             }
 
             EndDestroyed();

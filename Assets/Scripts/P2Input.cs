@@ -14,6 +14,11 @@ public class P2Input : MonoBehaviour
         _playerInputActions = new PlayerInputActions();
         EnableInput();
     }
+    
+    private void OnDisable()
+    {
+        _playerInputActions.Player_2.Disable();
+    }
 
     public void EnableInput()
     {

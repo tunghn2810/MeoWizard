@@ -10,7 +10,6 @@ public class Bomb : MonoBehaviour
     private SpriteRenderer _bombSprite;
     private Collider2D _bombCollider;
 
-    //Bomb
     private float _timer;
     [SerializeField] private GameObject _fireCenter;
     [SerializeField] private GameObject _fireUp;
@@ -28,9 +27,11 @@ public class Bomb : MonoBehaviour
     private bool _isTriggered = false;
     public bool IsTriggered { get => _isTriggered; set => _isTriggered = value; }
 
+    private bool _isOneShot = false;
+    public bool IsOneShot { get => _isOneShot; set => _isOneShot = value; }
+
     private PlayerFunctions _player;
     public PlayerFunctions Player { get => _player; set => _player = value; }
-
 
     private void Awake()
     {
@@ -42,6 +43,7 @@ public class Bomb : MonoBehaviour
 
     private void Start()
     {
+        _isOneShot = _player.IsOnFire;
         SetBombTimer(3f);
     }
 
@@ -86,6 +88,9 @@ public class Bomb : MonoBehaviour
         _bombSprite.enabled = false;
         _bombCollider.enabled = false;
 
+        if (_isOneShot)
+            _fireCenter.tag = "FireOneShot";
+
         RaycastHit2D obsCheckUp = Physics2D.Raycast(transform.position, Vector2.up, _power + 1, _directionCheckLayer);
         if (obsCheckUp)
         {
@@ -94,6 +99,8 @@ public class Bomb : MonoBehaviour
             {
                 for (int i = 1; i < distance; i++)
                 {
+                    if (_isOneShot)
+                        _fireUp.transform.GetChild(i).gameObject.tag = "FireOneShot";
                     _fireUp.transform.GetChild(i).gameObject.SetActive(true);
                 }
             }
@@ -118,6 +125,8 @@ public class Bomb : MonoBehaviour
         {
             for (int i = 1; i <= _power; i++)
             {
+                if (_isOneShot)
+                    _fireUp.transform.GetChild(i).gameObject.tag = "FireOneShot";
                 _fireUp.transform.GetChild(i).gameObject.SetActive(true);
             }
             _fireUp.transform.GetChild(0).gameObject.SetActive(true);
@@ -132,6 +141,8 @@ public class Bomb : MonoBehaviour
             {
                 for (int i = 1; i < distance; i++)
                 {
+                    if (_isOneShot)
+                        _fireDown.transform.GetChild(i).gameObject.tag = "FireOneShot";
                     _fireDown.transform.GetChild(i).gameObject.SetActive(true);
                 }
             }
@@ -156,6 +167,8 @@ public class Bomb : MonoBehaviour
         {
             for (int i = 1; i <= _power; i++)
             {
+                if (_isOneShot)
+                    _fireDown.transform.GetChild(i).gameObject.tag = "FireOneShot";
                 _fireDown.transform.GetChild(i).gameObject.SetActive(true);
             }
             _fireDown.transform.GetChild(0).gameObject.SetActive(true);
@@ -170,6 +183,8 @@ public class Bomb : MonoBehaviour
             {
                 for (int i = 1; i < distance; i++)
                 {
+                    if (_isOneShot)
+                        _fireLeft.transform.GetChild(i).gameObject.tag = "FireOneShot";
                     _fireLeft.transform.GetChild(i).gameObject.SetActive(true);
                 }
             }
@@ -194,6 +209,8 @@ public class Bomb : MonoBehaviour
         {
             for (int i = 1; i <= _power; i++)
             {
+                if (_isOneShot)
+                    _fireLeft.transform.GetChild(i).gameObject.tag = "FireOneShot";
                 _fireLeft.transform.GetChild(i).gameObject.SetActive(true);
             }
             _fireLeft.transform.GetChild(0).gameObject.SetActive(true);
@@ -208,6 +225,8 @@ public class Bomb : MonoBehaviour
             {
                 for (int i = 1; i < distance; i++)
                 {
+                    if (_isOneShot)
+                        _fireRight.transform.GetChild(i).gameObject.tag = "FireOneShot";
                     _fireRight.transform.GetChild(i).gameObject.SetActive(true);
                 }
             }
@@ -232,6 +251,8 @@ public class Bomb : MonoBehaviour
         {
             for (int i = 1; i <= _power; i++)
             {
+                if (_isOneShot)
+                    _fireRight.transform.GetChild(i).gameObject.tag = "FireOneShot";
                 _fireRight.transform.GetChild(i).gameObject.SetActive(true);
             }
             _fireRight.transform.GetChild(0).gameObject.SetActive(true);

@@ -5362,10 +5362,10 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.18381113
+    x: 0.5349682
     y: 0
-    width: 0.63240737
-    height: 1
+    width: 0.2620903
+    height: 0.6623711
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
@@ -10977,7 +10977,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 9acfd011800a3c4478f642eb3c0bc8f4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

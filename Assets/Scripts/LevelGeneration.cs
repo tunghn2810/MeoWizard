@@ -13,10 +13,10 @@ public class LevelGeneration : MonoBehaviour
 
     [SerializeField] private GameObject[] _bombItems;
     private int _bombCount = 0;
-    private const int MAX_BOMB_COUNT = 15;
+    private const int MAX_BOMB_COUNT = 10;
     [SerializeField] private GameObject[] _fireItems;
     private int _fireCount = 0;
-    private const int MAX_FIRE_COUNT = 15;
+    private const int MAX_FIRE_COUNT = 10;
 
     private void Start()
     {

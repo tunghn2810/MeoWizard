@@ -641,7 +641,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Bomberman_12: -165118978
-      Bomberman_0: -1253908793
+      Bomberman_19: 802435214
       Bomberman_4: -1487997052
       Bomberman_11: 1836122501
       Bomberman_15: 1477175389
@@ -661,10 +661,10 @@ TextureImporter:
       Bomberman_10: 2040194018
       Bomberman_13: -1137725233
       Bomberman_16: -1344298681
-      Bomberman_17: -724121718
       Bomberman_23: 581750444
+      Bomberman_17: -724121718
       Bomberman_18: 1591321856
-      Bomberman_19: 802435214
+      Bomberman_0: -1253908793
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
