@@ -21,6 +21,8 @@ public class Bomb : MonoBehaviour
     private int _power;
     public int Power { get => _power; set => _power = value; }
 
+    private const float BOMB_TIMER = 2f;
+
     private bool _isExplodeEnd = false;
     public bool IsExplodeEnd { get => _isExplodeEnd; set => _isExplodeEnd = value; }
 
@@ -44,7 +46,7 @@ public class Bomb : MonoBehaviour
     private void Start()
     {
         _isOneShot = _player.IsOnFire;
-        SetBombTimer(3f);
+        SetBombTimer(BOMB_TIMER);
     }
 
     private void SetBombTimer(float timer)

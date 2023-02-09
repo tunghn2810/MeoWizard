@@ -10,7 +10,7 @@ public class GameStateManager : MonoBehaviour
         Gameplay
     }
 
-    private GameState _gameState;
+    [SerializeField] private GameState _gameState;
     public GameState CurrentGameState { get => _gameState; set => _gameState = value; }
 
     public static GameStateManager Instance { get; set; }
@@ -30,11 +30,13 @@ public class GameStateManager : MonoBehaviour
 
     private void Start()
     {
-        _gameState = GameState.MainMenu;
+        //_gameState = GameState.MainMenu;
     }
 
     public void EnterGame()
     {
         _gameState = GameState.Gameplay;
+        FadeCanvas.Instance.FadeOut();
+        SceneLoader.Instance.Load(SceneLoader.Scene.Gameplay);
     }
 }

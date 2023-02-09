@@ -23,7 +23,8 @@ public class InputProcessor : MonoBehaviour
 
     private void Start()
     {
-        _menuControl = GameObject.FindGameObjectWithTag("MenuControl").GetComponent<MenuControlScript>();
+        if (GameStateManager.Instance.CurrentGameState == GameStateManager.GameState.MainMenu)
+            _menuControl = GameObject.FindGameObjectWithTag("MenuControl").GetComponent<MenuControlScript>();
     }
 
     public void DirectionalButton(InputAction.CallbackContext context, PlayerFunctions player)

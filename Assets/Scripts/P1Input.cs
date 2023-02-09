@@ -8,10 +8,14 @@ public class P1Input : MonoBehaviour
 
     private void Awake()
     {
-        //_playerFunctions = GameObject.FindGameObjectWithTag("P1").GetComponent<PlayerFunctions>();
         _playerFunctions = GetComponent<PlayerFunctions>();
         _playerInputActions = new PlayerInputActions();
         EnableInput();
+    }
+
+    private void OnEnable()
+    {
+        _playerInputActions.Player_1.Enable();
     }
 
     private void OnDisable()
@@ -21,8 +25,6 @@ public class P1Input : MonoBehaviour
 
     public void EnableInput()
     {
-        _playerInputActions.Player_1.Enable();
-
         _playerInputActions.Player_1.MoveUp.performed += DirectionalInput;
         _playerInputActions.Player_1.MoveDown.performed += DirectionalInput;
         _playerInputActions.Player_1.MoveLeft.performed += DirectionalInput;

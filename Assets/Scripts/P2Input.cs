@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -14,6 +12,11 @@ public class P2Input : MonoBehaviour
         _playerInputActions = new PlayerInputActions();
         EnableInput();
     }
+
+    private void OnEnable()
+    {
+        _playerInputActions.Player_2.Enable();
+    }
     
     private void OnDisable()
     {
@@ -22,8 +25,6 @@ public class P2Input : MonoBehaviour
 
     public void EnableInput()
     {
-        _playerInputActions.Player_2.Enable();
-
         _playerInputActions.Player_2.MoveUp.performed += MoveInput;
         _playerInputActions.Player_2.MoveDown.performed += MoveInput;
         _playerInputActions.Player_2.MoveLeft.performed += MoveInput;

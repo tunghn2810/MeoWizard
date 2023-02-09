@@ -8,6 +8,5 @@ public class ButtonFunctions : MonoBehaviour
     public void PlayGame()
     {
         GameStateManager.Instance.EnterGame();
-        SceneManager.LoadScene("Demo_1");
     }
 }
