@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+using static GameStateManager;
+
 public class InputProcessor : MonoBehaviour
 {
     private MenuControlScript _menuControl;
 
-    public static InputProcessor Instance { get; set; }
+    public static InputProcessor I_InputProcessor { get; set; }
     private void Awake()
     {
-        if (Instance == null)
+        if (I_InputProcessor == null)
         {
-            Instance = this;
+            I_InputProcessor = this;
             DontDestroyOnLoad(gameObject);
         }
         else
@@ -21,10 +23,9 @@ public class InputProcessor : MonoBehaviour
         }
     }
 
-    private void Start()
+    public void OnSceneLoaded()
     {
-        if (GameStateManager.Instance.CurrentGameState == GameStateManager.GameState.MainMenu)
-            _menuControl = GameObject.FindGameObjectWithTag("MenuControl").GetComponent<MenuControlScript>();
+        _menuControl = GameObject.FindGameObjectWithTag("MenuControl")?.GetComponent<MenuControlScript>();
     }
 
     public void DirectionalButton(InputAction.CallbackContext context, PlayerFunctions player)
@@ -47,7 +48,7 @@ public class InputProcessor : MonoBehaviour
             directionNum = 3;
         }
 
-        if (GameStateManager.Instance.CurrentGameState == GameStateManager.GameState.MainMenu)
+        if (I_GameStateManager.CurrentGameState == GameState.MainMenu)
         {
             if (context.phase == InputActionPhase.Performed)
             {
@@ -57,7 +58,7 @@ public class InputProcessor : MonoBehaviour
                     _menuControl.MoveCursor(true);
             }
         }
-        else if (GameStateManager.Instance.CurrentGameState == GameStateManager.GameState.Gameplay)
+        else if (I_GameStateManager.CurrentGameState == GameState.Gameplay)
         {
             player.MoveInput(directionNum);
         }
@@ -65,12 +66,12 @@ public class InputProcessor : MonoBehaviour
 
     public void AButton(InputAction.CallbackContext context, PlayerFunctions player)
     {
-        if (GameStateManager.Instance.CurrentGameState == GameStateManager.GameState.MainMenu)
+        if (I_GameStateManager.CurrentGameState == GameState.MainMenu)
         {
             if (context.phase == InputActionPhase.Performed)
                 _menuControl.Submit();
         }
-        else if (GameStateManager.Instance.CurrentGameState == GameStateManager.GameState.Gameplay)
+        else if (I_GameStateManager.CurrentGameState == GameState.Gameplay)
             player.PlantBomb();
     }
 }

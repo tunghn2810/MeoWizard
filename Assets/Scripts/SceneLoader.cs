@@ -4,23 +4,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+using static GameStateManager;
+using static GameplayManager;
+using static FadeCanvas;
+using static InputProcessor;
+
 public class SceneLoader : MonoBehaviour
 {
-    public enum Scene
-    {
-        MainMenu,
-        Gameplay
-    }
-
     private Action onLoaderCallback;
 
-    public static SceneLoader Instance { get; set; }
-
+    public static SceneLoader I_SceneLoader { get; set; }
     private void Awake()
     {
-        if (Instance == null)
+        if (I_SceneLoader == null)
         {
-            Instance = this;
+            I_SceneLoader = this;
             DontDestroyOnLoad(gameObject);
         }
         else
@@ -29,36 +27,74 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
-    public void Load(Scene scene)
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
+    {
+        if (scene.name == "Loading")
+        {
+
+        }
+        else if (scene.name == "Gameplay")
+        {
+            I_GameplayManager.OnSceneLoaded();
+        }
+        else if (scene.name == "MainMenu")
+        {
+            I_InputProcessor.OnSceneLoaded();
+        }
+    }
+
+    private void Start()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void Load(string sceneName)
     {
         onLoaderCallback = () =>
         {
-            StartCoroutine(LoadAsync(scene));
+            StartCoroutine(LoadAsync(sceneName));
         };
     }
 
-    private IEnumerator LoadAsync(Scene scene)
+    private IEnumerator LoadAsync(string sceneName)
     {
         yield return null; //Do nothing for 1 frame
-        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(scene.ToString());
+        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneName);
 
         while (!asyncOperation.isDone)
         {
             yield return null;
         }
 
-        while (!FadeCanvas.Instance.IsFadeOutFinished)
+        while (!I_FadeCanvas.IsFadeOutFinished)
         {
             yield return null;
         }
 
-        FadeCanvas.Instance.FadeIn();
+        I_FadeCanvas.FadeIn();
+
+        yield return null;
+
+        if (I_GameStateManager.NextGameState == GameState.Gameplay)
+        {
+            I_GameStateManager.EnterGame();
+            I_GameStateManager.SetNextState(GameState.Loading);
+        }
     }
 
     public void LoaderCallback()
     {
-        if (onLoaderCallback != null)
-            onLoaderCallback();
+        onLoaderCallback?.Invoke();
         onLoaderCallback = null;
     }
 }

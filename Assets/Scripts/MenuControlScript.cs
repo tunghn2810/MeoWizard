@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class MenuControlScript : MonoBehaviour
 {
+    //Buttons
+    private Button[] _buttons;
+
+    //Cursor control
     private RectTransform _cursor;
     private int _cursorIndex = 1;
     private Vector2 _cursorPosOffset = new Vector3(-64, 0);
@@ -11,6 +15,10 @@ public class MenuControlScript : MonoBehaviour
 
     private void Awake()
     {
+        _buttons = GetComponentsInChildren<Button>();
+
+        _buttons[0].OnSubmit += ButtonFunctions.PlayGame;
+
         _cursor = transform.GetChild(0).GetComponent<RectTransform>();
     }
 
@@ -36,6 +44,6 @@ public class MenuControlScript : MonoBehaviour
 
     public void Submit()
     {
-        transform.GetChild(_cursorIndex).GetComponent<Button>().Submit();
+        _buttons[_cursorIndex - 1].Submit();
     }
 }

@@ -8,12 +8,12 @@ public class FadeCanvas : MonoBehaviour
 
     public bool IsFadeOutFinished { get => _uiFade.IsFadeOutFinished; }
     
-    public static FadeCanvas Instance { get; set; }
+    public static FadeCanvas I_FadeCanvas { get; set; }
     private void Awake()
     {
-        if (Instance == null)
+        if (I_FadeCanvas == null)
         {
-            Instance = this;
+            I_FadeCanvas = this;
             DontDestroyOnLoad(gameObject);
         }
         else

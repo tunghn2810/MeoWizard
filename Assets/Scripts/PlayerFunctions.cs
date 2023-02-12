@@ -5,6 +5,9 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System;
 
+using static ScoreManager;
+using static LevelManager;
+
 public class PlayerFunctions : MonoBehaviour
 {
     //References
@@ -53,6 +56,12 @@ public class PlayerFunctions : MonoBehaviour
     private List<GameObject> _bombList = new List<GameObject>();
 
     //Stats
+    [SerializeField] private int _playerNum;
+    public int PlayerNum { get => _playerNum; }
+    
+    [SerializeField] private int _playerScore;
+    public int PlayerScore { get => _playerScore; set => _playerScore = value; }
+
     private int _power = 1;
     public int Power { get => _power; set => _power = value; }
     private const int MAX_POWER = 5;
@@ -365,6 +374,10 @@ public class PlayerFunctions : MonoBehaviour
     {
         _animator.SetBool("isDead", true);
         _isDead = true;
+
+        I_LevelManager.RemovePlayer(_playerNum);
+
+        I_LevelManager.RoundEndCheck();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -398,7 +411,10 @@ public class PlayerFunctions : MonoBehaviour
         //Check when getting hit by fire
         if (collision.gameObject.tag == "Fire")
         {
-            OnFire();
+            if (_isOnFire)
+                Die();
+            else
+                OnFire();
         }
         else if (collision.gameObject.tag == "FireOneShot")
         {

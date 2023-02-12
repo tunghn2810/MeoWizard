@@ -9,6 +9,7 @@ TagManager:
   - Fire
   - MenuControl
   - FireOneShot
+  - ScoreboardPlayers
   layers:
   - Default
   - TransparentFX

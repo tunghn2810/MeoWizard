@@ -17,7 +17,7 @@ public class UIFade : MonoBehaviour
     public void FinishFadingOut()
     {
         _isFadeOutFinished = true;
-        SceneLoader.Instance.LoaderCallback();
+        SceneLoader.I_SceneLoader.LoaderCallback();
     }
 
     public void FadeIn()

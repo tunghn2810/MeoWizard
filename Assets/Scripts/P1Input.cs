@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+using static InputProcessor;
+
 public class P1Input : MonoBehaviour
 {
     private PlayerFunctions _playerFunctions;
@@ -40,11 +42,11 @@ public class P1Input : MonoBehaviour
 
     private void DirectionalInput(InputAction.CallbackContext context)
     {
-        InputProcessor.Instance.DirectionalButton(context, _playerFunctions);
+        I_InputProcessor.DirectionalButton(context, _playerFunctions);
     }
 
     private void AInput(InputAction.CallbackContext context)
     {
-        InputProcessor.Instance.AButton(context, _playerFunctions);
+        I_InputProcessor.AButton(context, _playerFunctions);
     }
 }

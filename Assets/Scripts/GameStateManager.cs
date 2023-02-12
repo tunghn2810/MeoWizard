@@ -2,10 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using static SceneLoader;
+using static FadeCanvas;
+
 public class GameStateManager : MonoBehaviour
 {
     public enum GameState
     {
+        Loading,
         MainMenu,
         Gameplay
     }
@@ -13,13 +17,19 @@ public class GameStateManager : MonoBehaviour
     [SerializeField] private GameState _gameState;
     public GameState CurrentGameState { get => _gameState; set => _gameState = value; }
 
-    public static GameStateManager Instance { get; set; }
+    [SerializeField] private GameState _nextGameState;
+    public GameState NextGameState { get => _nextGameState; }
+
+    [SerializeField] private bool _enterGameplay = false;
+    public bool EnterGameplay { get => _enterGameplay; set => _enterGameplay = value; }
+
+    public static GameStateManager I_GameStateManager { get; set; }
 
     private void Awake()
     {
-        if (Instance == null)
+        if (I_GameStateManager == null)
         {
-            Instance = this;
+            I_GameStateManager = this;
             DontDestroyOnLoad(gameObject);
         }
         else
@@ -28,15 +38,21 @@ public class GameStateManager : MonoBehaviour
         }
     }
 
-    private void Start()
+    public void SetNextState(GameState nextState)
     {
-        //_gameState = GameState.MainMenu;
+        _nextGameState = nextState;
+    }
+
+    public void EnterLoading()
+    {
+        I_FadeCanvas.FadeOut();
+        I_SceneLoader.Load("Loading");
     }
 
     public void EnterGame()
     {
+        I_FadeCanvas.FadeOut();
         _gameState = GameState.Gameplay;
-        FadeCanvas.Instance.FadeOut();
-        SceneLoader.Instance.Load(SceneLoader.Scene.Gameplay);
+        I_SceneLoader.Load("Gameplay");
     }
 }

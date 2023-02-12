@@ -3,10 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ButtonFunctions : MonoBehaviour
+using static GameStateManager;
+
+public static class ButtonFunctions
 {
-    public void PlayGame()
+    public static void PlayGame()
     {
-        GameStateManager.Instance.EnterGame();
+        I_GameStateManager.EnterGameplay = true;
+        I_GameStateManager.SetNextState(GameState.Gameplay);
+        I_GameStateManager.EnterLoading();
+    }
+
+    public static void Replay()
+    {
+        I_GameStateManager.EnterGameplay = true;
+        PlayGame();
     }
 }
