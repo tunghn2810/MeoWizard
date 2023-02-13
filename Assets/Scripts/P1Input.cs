@@ -31,21 +31,21 @@ public class P1Input : MonoBehaviour
         _playerInputActions.Player_1.MoveDown.performed += DirectionalInput;
         _playerInputActions.Player_1.MoveLeft.performed += DirectionalInput;
         _playerInputActions.Player_1.MoveRight.performed += DirectionalInput;
-
+        
         _playerInputActions.Player_1.MoveUp.canceled += DirectionalInput;
         _playerInputActions.Player_1.MoveDown.canceled += DirectionalInput;
         _playerInputActions.Player_1.MoveLeft.canceled += DirectionalInput;
         _playerInputActions.Player_1.MoveRight.canceled += DirectionalInput;
-
+        
         _playerInputActions.Player_1.A.performed += AInput;
     }
 
-    private void DirectionalInput(InputAction.CallbackContext context)
+    public void DirectionalInput(InputAction.CallbackContext context)
     {
         I_InputProcessor.DirectionalButton(context, _playerFunctions);
     }
 
-    private void AInput(InputAction.CallbackContext context)
+    public void AInput(InputAction.CallbackContext context)
     {
         I_InputProcessor.AButton(context, _playerFunctions);
     }
