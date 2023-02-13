@@ -2,7 +2,7 @@
     "name": "PlayerInputActions",
     "maps": [
         {
-            "name": "Player_1",
+            "name": "Player",
             "id": "85eda4f0-2090-4255-9196-059dd932e438",
             "actions": [
                 {
@@ -85,7 +85,7 @@
                 },
                 {
                     "name": "",
-                    "id": "c1114e42-613d-4944-a27c-5c735d2bdebe",
+                    "id": "6ea41447-1446-4eea-9056-1d055b685a54",
                     "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
@@ -118,7 +118,7 @@
                 },
                 {
                     "name": "",
-                    "id": "ec8a780b-fea6-451b-aaef-022f8ce4db4a",
+                    "id": "2b31f93b-1172-4d29-9626-22eeb5df28db",
                     "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
@@ -151,7 +151,7 @@
                 },
                 {
                     "name": "",
-                    "id": "e18b15f4-3f6e-48e5-b481-9dac77fd8f16",
+                    "id": "640e5601-0a3b-48c3-9c29-f13456f41a69",
                     "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
@@ -184,7 +184,7 @@
                 },
                 {
                     "name": "",
-                    "id": "9abbc7d8-7f1e-4fb4-89f7-41c989febdea",
+                    "id": "c99c4805-9aa1-4b36-882e-96122c6d9b65",
                     "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
@@ -217,7 +217,7 @@
                 },
                 {
                     "name": "",
-                    "id": "c539b236-0226-4e3f-968c-6793963fa170",
+                    "id": "6be237a3-747b-4488-86e6-981a42e6f630",
                     "path": "<Keyboard>/numpad3",
                     "interactions": "",
                     "processors": "",
@@ -250,7 +250,7 @@
                 },
                 {
                     "name": "",
-                    "id": "cbf3de36-b033-4838-bb38-429569ca8fbe",
+                    "id": "5e3460a4-10a1-49a5-ad08-0bf11fbadabf",
                     "path": "<Keyboard>/numpad5",
                     "interactions": "",
                     "processors": "",
@@ -280,7 +280,7 @@
             "devices": [
                 {
                     "devicePath": "<Gamepad>",
-                    "isOptional": true,
+                    "isOptional": false,
                     "isOR": false
                 }
             ]
@@ -291,7 +291,7 @@
             "devices": [
                 {
                     "devicePath": "<Keyboard>",
-                    "isOptional": true,
+                    "isOptional": false,
                     "isOR": false
                 }
             ]

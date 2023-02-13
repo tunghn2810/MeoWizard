@@ -145,9 +145,8 @@ GameObject:
   - component: {fileID: 7436218203514453794}
   - component: {fileID: 7436218203514453817}
   - component: {fileID: 7436218203514453819}
-  - component: {fileID: 7436218204220404847}
   - component: {fileID: 7436218204220404848}
-  - component: {fileID: 1217115814627053659}
+  - component: {fileID: 7436218204220404847}
   m_Layer: 6
   m_Name: Player_1
   m_TagString: Player
@@ -290,18 +289,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &7436218204220404847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7436218203514453795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e25e841eeb37008408e2c2718292fb1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &7436218204220404848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,7 +315,7 @@ MonoBehaviour:
   - {fileID: 7436218202848833580}
   _playerNum: 0
   _playerScore: 0
---- !u!114 &1217115814627053659
+--- !u!114 &7436218204220404847
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -337,207 +324,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7436218203514453795}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Script: {fileID: 11500000, guid: e25e841eeb37008408e2c2718292fb1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 1babe0083844f1a4c88b630763845fd0, type: 3}
-  m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7436218204220404847}
-        m_TargetAssemblyTypeName: P1Input, Assembly-CSharp
-        m_MethodName: DirectionalInput
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: f957dfa8-cd3a-4012-94ac-e4a848b07b3e
-    m_ActionName: Player_1/MoveUp[/Keyboard/w]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7436218204220404847}
-        m_TargetAssemblyTypeName: P1Input, Assembly-CSharp
-        m_MethodName: DirectionalInput
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 4e354746-a566-4c93-b7d4-d47a6378ad5a
-    m_ActionName: Player_1/MoveDown[/Keyboard/s]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7436218204220404847}
-        m_TargetAssemblyTypeName: P1Input, Assembly-CSharp
-        m_MethodName: DirectionalInput
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: a34472fd-005a-47ac-b3de-2a1ba613fda2
-    m_ActionName: Player_1/MoveLeft[/Keyboard/a]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7436218204220404847}
-        m_TargetAssemblyTypeName: P1Input, Assembly-CSharp
-        m_MethodName: DirectionalInput
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: d95f601e-3139-4f74-b6b5-73510094a7ad
-    m_ActionName: Player_1/MoveRight[/Keyboard/d]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7436218204220404847}
-        m_TargetAssemblyTypeName: P1Input, Assembly-CSharp
-        m_MethodName: AInput
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 0dec2bb5-dae9-4146-a210-04a8573790c0
-    m_ActionName: Player_1/A[/Keyboard/l]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7436218204220404847}
-        m_TargetAssemblyTypeName: P1Input, Assembly-CSharp
-        m_MethodName: DirectionalInput
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 1ea17ec1-b028-4a94-89b8-bdef44583dfc
-    m_ActionName: Player_2/MoveUp[/Keyboard/upArrow]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7436218204220404847}
-        m_TargetAssemblyTypeName: P1Input, Assembly-CSharp
-        m_MethodName: DirectionalInput
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: d6cc13af-b050-47cd-aa68-c14661b2bb69
-    m_ActionName: Player_2/MoveDown[/Keyboard/downArrow]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7436218204220404847}
-        m_TargetAssemblyTypeName: P1Input, Assembly-CSharp
-        m_MethodName: DirectionalInput
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: e4b6e78e-b59b-4464-80af-d76229182ecd
-    m_ActionName: Player_2/MoveLeft[/Keyboard/leftArrow]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7436218204220404847}
-        m_TargetAssemblyTypeName: P1Input, Assembly-CSharp
-        m_MethodName: DirectionalInput
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 097a459f-d22c-43dc-b459-f2780a099b0a
-    m_ActionName: Player_2/MoveRight[/Keyboard/rightArrow]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7436218204220404847}
-        m_TargetAssemblyTypeName: P1Input, Assembly-CSharp
-        m_MethodName: AInput
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 25f92c2f-79cc-4c79-8251-bbae087fb8be
-    m_ActionName: Player_2/A[/Keyboard/numpad3]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 5d6798fe-28c1-4669-b049-d8401932af2c
-    m_ActionName: Player_2/B[/Keyboard/numpad2]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 405aa424-64cf-47b3-b109-4ca2e6ed76ac
-    m_ActionName: Player_2/X[/Keyboard/numpad5]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: b30e1154-92ee-4a0e-bd64-84db20c6a621
-    m_ActionName: Player_2/Y[/Keyboard/numpad1]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 257a35a2-0ac0-44f0-abe8-5c158817bb19
-    m_ActionName: Player_2/L[/Keyboard/numpad4]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: e73ffc27-5445-4b85-b0e5-498277a5912a
-    m_ActionName: Player_2/R[/Keyboard/numpad6]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: Keyboard_1
-  m_DefaultActionMap: Player_1
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!1 &7436218203698100625
 GameObject:
   m_ObjectHideFlags: 0

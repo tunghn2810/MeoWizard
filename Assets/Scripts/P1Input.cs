@@ -11,42 +11,44 @@ public class P1Input : MonoBehaviour
     private void Awake()
     {
         _playerFunctions = GetComponent<PlayerFunctions>();
-        _playerInputActions = new PlayerInputActions();
-        EnableInput();
+        //_playerInputActions = new PlayerInputActions();
+        //EnableInput();
     }
 
     private void OnEnable()
     {
-        _playerInputActions.Player_1.Enable();
+        //_playerInputActions.Player.Enable();
     }
 
     private void OnDisable()
     {
-        _playerInputActions.Player_1.Disable();
+        //_playerInputActions.Player.Disable();
     }
 
     public void EnableInput()
     {
-        _playerInputActions.Player_1.MoveUp.performed += DirectionalInput;
-        _playerInputActions.Player_1.MoveDown.performed += DirectionalInput;
-        _playerInputActions.Player_1.MoveLeft.performed += DirectionalInput;
-        _playerInputActions.Player_1.MoveRight.performed += DirectionalInput;
+        _playerInputActions.Player.MoveUp.performed += DirectionalInput;
+        _playerInputActions.Player.MoveDown.performed += DirectionalInput;
+        _playerInputActions.Player.MoveLeft.performed += DirectionalInput;
+        _playerInputActions.Player.MoveRight.performed += DirectionalInput;
         
-        _playerInputActions.Player_1.MoveUp.canceled += DirectionalInput;
-        _playerInputActions.Player_1.MoveDown.canceled += DirectionalInput;
-        _playerInputActions.Player_1.MoveLeft.canceled += DirectionalInput;
-        _playerInputActions.Player_1.MoveRight.canceled += DirectionalInput;
+        _playerInputActions.Player.MoveUp.canceled += DirectionalInput;
+        _playerInputActions.Player.MoveDown.canceled += DirectionalInput;
+        _playerInputActions.Player.MoveLeft.canceled += DirectionalInput;
+        _playerInputActions.Player.MoveRight.canceled += DirectionalInput;
         
-        _playerInputActions.Player_1.A.performed += AInput;
+        _playerInputActions.Player.A.performed += AInput;
     }
 
     public void DirectionalInput(InputAction.CallbackContext context)
     {
-        I_InputProcessor.DirectionalButton(context, _playerFunctions);
+        if (context.performed || context.canceled)
+            I_InputProcessor.DirectionalButton(context, _playerFunctions);
     }
 
     public void AInput(InputAction.CallbackContext context)
     {
-        I_InputProcessor.AButton(context, _playerFunctions);
+        if (context.performed || context.canceled)
+            I_InputProcessor.AButton(context, _playerFunctions);
     }
 }

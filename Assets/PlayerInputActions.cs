@@ -24,7 +24,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
     ""name"": ""PlayerInputActions"",
     ""maps"": [
         {
-            ""name"": ""Player_1"",
+            ""name"": ""Player"",
             ""id"": ""85eda4f0-2090-4255-9196-059dd932e438"",
             ""actions"": [
                 {
@@ -107,7 +107,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""c1114e42-613d-4944-a27c-5c735d2bdebe"",
+                    ""id"": ""6ea41447-1446-4eea-9056-1d055b685a54"",
                     ""path"": ""<Keyboard>/upArrow"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -140,7 +140,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""ec8a780b-fea6-451b-aaef-022f8ce4db4a"",
+                    ""id"": ""2b31f93b-1172-4d29-9626-22eeb5df28db"",
                     ""path"": ""<Keyboard>/downArrow"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -173,7 +173,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""e18b15f4-3f6e-48e5-b481-9dac77fd8f16"",
+                    ""id"": ""640e5601-0a3b-48c3-9c29-f13456f41a69"",
                     ""path"": ""<Keyboard>/leftArrow"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -206,7 +206,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""9abbc7d8-7f1e-4fb4-89f7-41c989febdea"",
+                    ""id"": ""c99c4805-9aa1-4b36-882e-96122c6d9b65"",
                     ""path"": ""<Keyboard>/rightArrow"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -239,7 +239,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""c539b236-0226-4e3f-968c-6793963fa170"",
+                    ""id"": ""6be237a3-747b-4488-86e6-981a42e6f630"",
                     ""path"": ""<Keyboard>/numpad3"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -272,7 +272,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""cbf3de36-b033-4838-bb38-429569ca8fbe"",
+                    ""id"": ""5e3460a4-10a1-49a5-ad08-0bf11fbadabf"",
                     ""path"": ""<Keyboard>/numpad5"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -302,7 +302,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
             ""devices"": [
                 {
                     ""devicePath"": ""<Gamepad>"",
-                    ""isOptional"": true,
+                    ""isOptional"": false,
                     ""isOR"": false
                 }
             ]
@@ -313,21 +313,21 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
             ""devices"": [
                 {
                     ""devicePath"": ""<Keyboard>"",
-                    ""isOptional"": true,
+                    ""isOptional"": false,
                     ""isOR"": false
                 }
             ]
         }
     ]
 }");
-        // Player_1
-        m_Player_1 = asset.FindActionMap("Player_1", throwIfNotFound: true);
-        m_Player_1_MoveUp = m_Player_1.FindAction("MoveUp", throwIfNotFound: true);
-        m_Player_1_MoveDown = m_Player_1.FindAction("MoveDown", throwIfNotFound: true);
-        m_Player_1_MoveLeft = m_Player_1.FindAction("MoveLeft", throwIfNotFound: true);
-        m_Player_1_MoveRight = m_Player_1.FindAction("MoveRight", throwIfNotFound: true);
-        m_Player_1_A = m_Player_1.FindAction("A", throwIfNotFound: true);
-        m_Player_1_Join = m_Player_1.FindAction("Join", throwIfNotFound: true);
+        // Player
+        m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
+        m_Player_MoveUp = m_Player.FindAction("MoveUp", throwIfNotFound: true);
+        m_Player_MoveDown = m_Player.FindAction("MoveDown", throwIfNotFound: true);
+        m_Player_MoveLeft = m_Player.FindAction("MoveLeft", throwIfNotFound: true);
+        m_Player_MoveRight = m_Player.FindAction("MoveRight", throwIfNotFound: true);
+        m_Player_A = m_Player.FindAction("A", throwIfNotFound: true);
+        m_Player_Join = m_Player.FindAction("Join", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -384,54 +384,54 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         return asset.FindBinding(bindingMask, out action);
     }
 
-    // Player_1
-    private readonly InputActionMap m_Player_1;
-    private IPlayer_1Actions m_Player_1ActionsCallbackInterface;
-    private readonly InputAction m_Player_1_MoveUp;
-    private readonly InputAction m_Player_1_MoveDown;
-    private readonly InputAction m_Player_1_MoveLeft;
-    private readonly InputAction m_Player_1_MoveRight;
-    private readonly InputAction m_Player_1_A;
-    private readonly InputAction m_Player_1_Join;
-    public struct Player_1Actions
+    // Player
+    private readonly InputActionMap m_Player;
+    private IPlayerActions m_PlayerActionsCallbackInterface;
+    private readonly InputAction m_Player_MoveUp;
+    private readonly InputAction m_Player_MoveDown;
+    private readonly InputAction m_Player_MoveLeft;
+    private readonly InputAction m_Player_MoveRight;
+    private readonly InputAction m_Player_A;
+    private readonly InputAction m_Player_Join;
+    public struct PlayerActions
     {
         private @PlayerInputActions m_Wrapper;
-        public Player_1Actions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
-        public InputAction @MoveUp => m_Wrapper.m_Player_1_MoveUp;
-        public InputAction @MoveDown => m_Wrapper.m_Player_1_MoveDown;
-        public InputAction @MoveLeft => m_Wrapper.m_Player_1_MoveLeft;
-        public InputAction @MoveRight => m_Wrapper.m_Player_1_MoveRight;
-        public InputAction @A => m_Wrapper.m_Player_1_A;
-        public InputAction @Join => m_Wrapper.m_Player_1_Join;
-        public InputActionMap Get() { return m_Wrapper.m_Player_1; }
+        public PlayerActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @MoveUp => m_Wrapper.m_Player_MoveUp;
+        public InputAction @MoveDown => m_Wrapper.m_Player_MoveDown;
+        public InputAction @MoveLeft => m_Wrapper.m_Player_MoveLeft;
+        public InputAction @MoveRight => m_Wrapper.m_Player_MoveRight;
+        public InputAction @A => m_Wrapper.m_Player_A;
+        public InputAction @Join => m_Wrapper.m_Player_Join;
+        public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(Player_1Actions set) { return set.Get(); }
-        public void SetCallbacks(IPlayer_1Actions instance)
+        public static implicit operator InputActionMap(PlayerActions set) { return set.Get(); }
+        public void SetCallbacks(IPlayerActions instance)
         {
-            if (m_Wrapper.m_Player_1ActionsCallbackInterface != null)
+            if (m_Wrapper.m_PlayerActionsCallbackInterface != null)
             {
-                @MoveUp.started -= m_Wrapper.m_Player_1ActionsCallbackInterface.OnMoveUp;
-                @MoveUp.performed -= m_Wrapper.m_Player_1ActionsCallbackInterface.OnMoveUp;
-                @MoveUp.canceled -= m_Wrapper.m_Player_1ActionsCallbackInterface.OnMoveUp;
-                @MoveDown.started -= m_Wrapper.m_Player_1ActionsCallbackInterface.OnMoveDown;
-                @MoveDown.performed -= m_Wrapper.m_Player_1ActionsCallbackInterface.OnMoveDown;
-                @MoveDown.canceled -= m_Wrapper.m_Player_1ActionsCallbackInterface.OnMoveDown;
-                @MoveLeft.started -= m_Wrapper.m_Player_1ActionsCallbackInterface.OnMoveLeft;
-                @MoveLeft.performed -= m_Wrapper.m_Player_1ActionsCallbackInterface.OnMoveLeft;
-                @MoveLeft.canceled -= m_Wrapper.m_Player_1ActionsCallbackInterface.OnMoveLeft;
-                @MoveRight.started -= m_Wrapper.m_Player_1ActionsCallbackInterface.OnMoveRight;
-                @MoveRight.performed -= m_Wrapper.m_Player_1ActionsCallbackInterface.OnMoveRight;
-                @MoveRight.canceled -= m_Wrapper.m_Player_1ActionsCallbackInterface.OnMoveRight;
-                @A.started -= m_Wrapper.m_Player_1ActionsCallbackInterface.OnA;
-                @A.performed -= m_Wrapper.m_Player_1ActionsCallbackInterface.OnA;
-                @A.canceled -= m_Wrapper.m_Player_1ActionsCallbackInterface.OnA;
-                @Join.started -= m_Wrapper.m_Player_1ActionsCallbackInterface.OnJoin;
-                @Join.performed -= m_Wrapper.m_Player_1ActionsCallbackInterface.OnJoin;
-                @Join.canceled -= m_Wrapper.m_Player_1ActionsCallbackInterface.OnJoin;
+                @MoveUp.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMoveUp;
+                @MoveUp.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMoveUp;
+                @MoveUp.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMoveUp;
+                @MoveDown.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMoveDown;
+                @MoveDown.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMoveDown;
+                @MoveDown.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMoveDown;
+                @MoveLeft.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMoveLeft;
+                @MoveLeft.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMoveLeft;
+                @MoveLeft.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMoveLeft;
+                @MoveRight.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMoveRight;
+                @MoveRight.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMoveRight;
+                @MoveRight.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMoveRight;
+                @A.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnA;
+                @A.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnA;
+                @A.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnA;
+                @Join.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJoin;
+                @Join.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJoin;
+                @Join.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJoin;
             }
-            m_Wrapper.m_Player_1ActionsCallbackInterface = instance;
+            m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
             {
                 @MoveUp.started += instance.OnMoveUp;
@@ -455,7 +455,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
             }
         }
     }
-    public Player_1Actions @Player_1 => new Player_1Actions(this);
+    public PlayerActions @Player => new PlayerActions(this);
     private int m_Keyboard_1SchemeIndex = -1;
     public InputControlScheme Keyboard_1Scheme
     {
@@ -483,7 +483,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
             return asset.controlSchemes[m_Keyboard_2SchemeIndex];
         }
     }
-    public interface IPlayer_1Actions
+    public interface IPlayerActions
     {
         void OnMoveUp(InputAction.CallbackContext context);
         void OnMoveDown(InputAction.CallbackContext context);

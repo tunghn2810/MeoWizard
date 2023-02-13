@@ -76,8 +76,8 @@ public class PlayerFunctions : MonoBehaviour
 
     private void Start()
     {
-        _rgbd = GetComponent<Rigidbody2D>();
-        _animator = GetComponent<Animator>();
+        _rgbd = GetComponentInChildren<Rigidbody2D>();
+        _animator = GetComponentInChildren<Animator>();
 
         _obstacleLayer = LayerMask.GetMask("Obstacle", "SoftWall");
         _bombLayer = LayerMask.GetMask("Bomb");
