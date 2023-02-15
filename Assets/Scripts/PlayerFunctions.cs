@@ -57,7 +57,7 @@ public class PlayerFunctions : MonoBehaviour
         public int bombPower;
         public PlayerFunctions player;
     }
-    private List<GameObject> _bombList = new List<GameObject>();
+    [SerializeField] private List<GameObject> _bombList = new List<GameObject>();
 
     //Iframes
     private float _iFrameTimer = 0;
@@ -80,7 +80,7 @@ public class PlayerFunctions : MonoBehaviour
     public int Power { get => _power; set => _power = value; }
     private const int MAX_POWER = 5;
 
-    private int _bombCap = 2;
+    [SerializeField] private int _bombCap = 2;
     public int BombCap { get => _bombCap; set => _bombCap = value; }
     private const int MAX_BOMBCAP = 10;
 

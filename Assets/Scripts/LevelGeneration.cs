@@ -31,7 +31,7 @@ public class LevelGeneration : MonoBehaviour
         }
 
 
-        if (GameplayManager.I_GameplayManager.PlayerCount == 3)
+        if (GameplayManager.I_GameplayManager.PlayerCount > 2)
         {
             for (int i = 0; i < _p3Walls.Length; i++)
             {
@@ -40,7 +40,8 @@ public class LevelGeneration : MonoBehaviour
                 _softWallInactives.Add(_p3Walls[i]);
             }
         }
-        if (GameplayManager.I_GameplayManager.PlayerCount == 4)
+
+        if (GameplayManager.I_GameplayManager.PlayerCount > 3)
         {
             for (int i = 0; i < _p4Walls.Length; i++)
             {

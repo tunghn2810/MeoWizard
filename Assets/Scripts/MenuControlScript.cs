@@ -23,7 +23,7 @@ public class MenuControlScript : MonoBehaviour
     //Cursor control
     private RectTransform _cursor;
     private int _cursorIndex = 1;
-    private Vector2 _cursorOffset = new Vector2(-64, 0);
+    private Vector2 _cursorOffset = new Vector2(-24, 0);
 
     private void Awake()
     {

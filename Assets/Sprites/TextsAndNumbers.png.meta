@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: affb8661491a39b4c9c22e733498d79d
+guid: 803f0c24c75145a40b0358d4a5a2db19
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,526 +105,568 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bomberman_0
+      name: Play_Game
       rect:
         serializedVersion: 2
-        x: 6
-        y: 272
-        width: 15
-        height: 23
-      alignment: 9
-      pivot: {x: 0.5, y: 0.3478261}
+        x: 16
+        y: 240
+        width: 140
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9be2b65e1d3a3a49b28d3c87167707e
-      internalID: -1253908793
+      spriteID: fea78ae722224744982661f4315b4497
+      internalID: -1542224473
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomberman_1
+      name: Players
       rect:
         serializedVersion: 2
-        x: 23
-        y: 272
-        width: 15
-        height: 23
-      alignment: 9
-      pivot: {x: 0.5, y: 0.3478261}
+        x: 16
+        y: 208
+        width: 112
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71693fd1f9a5f1a4888482e11acdc2d1
-      internalID: 1175626653
+      spriteID: 752a79c29d40c984db6e57e523644e8f
+      internalID: 1485444729
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomberman_2
+      name: Colon
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 210
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d90fa131b09d245855922935051d7a
+      internalID: 17852403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_Score
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 176
+        width: 130
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17450e48052ab7f47b98390a5b56bc3f
+      internalID: -711373805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quit
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 142
+        width: 56
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8629ea4b42c456f478b56b93ed38a0b1
+      internalID: -350205471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Again
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 146
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9572c9d5363f14f458b87c9851c6853d
+      internalID: 1713395770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Menu
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 134
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49eb08a4acb3e02488f3a89f4753cd41
+      internalID: -90203374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0_Big
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c1875ece0c1e541a47c335ef1a837e
+      internalID: 829502843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_Big
       rect:
         serializedVersion: 2
         x: 40
-        y: 272
-        width: 15
-        height: 23
-      alignment: 9
-      pivot: {x: 0.5, y: 0.3478261}
+        y: 48
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92aed5ba59bad7b468c1e1f989c5e0b4
-      internalID: 356387158
+      spriteID: 4a29566eb51262b41848af27c87c6152
+      internalID: -691891370
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomberman_3
+      name: 2_Big
       rect:
         serializedVersion: 2
-        x: 6
-        y: 247
-        width: 15
-        height: 23
-      alignment: 9
-      pivot: {x: 0.5, y: 0.3478261}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa44dd039f1aa054bab1e13b6d1c751c
-      internalID: -1767568654
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bomberman_4
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 247
-        width: 15
-        height: 23
-      alignment: 9
-      pivot: {x: 0.5, y: 0.3478261}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46fd45a32a26aef4aa31657f00133e38
-      internalID: -1487997052
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bomberman_5
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 247
-        width: 15
-        height: 23
-      alignment: 9
-      pivot: {x: 0.5, y: 0.3478261}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a17a25fbfbb81448bb49cd47e57625c
-      internalID: 95746290
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bomberman_6
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 222
-        width: 17
-        height: 23
-      alignment: 9
-      pivot: {x: 0.44117647, y: 0.3478261}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dcf6d6e13b743fd458eb686cd234d8f8
-      internalID: 1794652294
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bomberman_7
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 222
-        width: 15
-        height: 23
-      alignment: 9
-      pivot: {x: 0.5, y: 0.3478261}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05b6422ade0814e438532495015b1c1d
-      internalID: -574252798
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bomberman_8
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 222
+        x: 58
+        y: 48
         width: 16
-        height: 23
-      alignment: 9
-      pivot: {x: 0.46875, y: 0.3478261}
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ee0b9f404fc97044a2fd1cbe3377561
-      internalID: -775212022
+      spriteID: 115d1c07438eede4bbb99958dc851754
+      internalID: -1212838821
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomberman_9
+      name: 3_Big
       rect:
         serializedVersion: 2
-        x: 4
-        y: 197
-        width: 17
-        height: 23
-      alignment: 9
-      pivot: {x: 0.5588235, y: 0.3478261}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b8bf83d208717a647befa1f5448fac6f
-      internalID: -1588333536
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bomberman_10
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 197
-        width: 15
-        height: 23
-      alignment: 9
-      pivot: {x: 0.5, y: 0.3478261}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c07b169c9f281b4c94af7507179c93a
-      internalID: 2040194018
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bomberman_11
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 197
+        x: 82
+        y: 48
         width: 16
-        height: 23
-      alignment: 9
-      pivot: {x: 0.53125, y: 0.3478261}
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02d1f94183a4d8a41b0dad6507dec895
-      internalID: 1836122501
+      spriteID: 689e5e7c43d19cd40943d05a0c053726
+      internalID: 445132922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomberman_12
+      name: 4_Big
       rect:
         serializedVersion: 2
-        x: 6
-        y: 171
-        width: 15
-        height: 24
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33333334}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b18ee51f1924a74f8fe84e02c21fa7f
-      internalID: -165118978
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bomberman_13
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 171
-        width: 15
-        height: 23
-      alignment: 9
-      pivot: {x: 0.5, y: 0.3478261}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91027101cb980c5418b7fb48b188ccda
-      internalID: -1137725233
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bomberman_14
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 171
-        width: 15
-        height: 24
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33333334}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e7c509c4522983149a57a8e93eb7b647
-      internalID: -1188736491
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bomberman_15
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 146
+        x: 106
+        y: 48
         width: 16
-        height: 22
-      alignment: 9
-      pivot: {x: 0.53125, y: 0.36363637}
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1671f4f75ffcbf64684d0a3bb79ba12b
-      internalID: 1477175389
+      spriteID: b12a244632be6604689a98c0384be922
+      internalID: 1370601793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomberman_16
+      name: 5_Big
       rect:
         serializedVersion: 2
-        x: 23
-        y: 146
-        width: 15
-        height: 23
-      alignment: 9
-      pivot: {x: 0.5, y: 0.3478261}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f0b258c687027a9439fd653ebbaefabf
-      internalID: -1344298681
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bomberman_17
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 146
+        x: 130
+        y: 48
         width: 16
-        height: 22
-      alignment: 9
-      pivot: {x: 0.46875, y: 0.36363637}
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fe58eeac249fe947857ece62d0815d9
-      internalID: -724121718
+      spriteID: e125d0e9a60935d4abeb549d87c7c7cc
+      internalID: 455501814
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomberman_18
+      name: 6_Big
       rect:
         serializedVersion: 2
-        x: 3
-        y: 66
-        width: 15
-        height: 22
-      alignment: 9
-      pivot: {x: 0.5, y: 0.36363637}
+        x: 154
+        y: 48
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf2d1c20926d2564693c8c238e32c998
-      internalID: 1591321856
+      spriteID: edfa710c1a0abbf49a0ac51486265bb7
+      internalID: 878338306
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomberman_19
+      name: 7_Big
       rect:
         serializedVersion: 2
-        x: 20
-        y: 66
-        width: 15
-        height: 22
-      alignment: 9
-      pivot: {x: 0.5, y: 0.36363637}
+        x: 175
+        y: 48
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ff58a481028695479adc49567c6e8f8
-      internalID: 802435214
+      spriteID: ccc3579c37b6f4946b2b8e546c3f3ecd
+      internalID: -423170281
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomberman_20
+      name: 8_Big
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 48
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36e05bf0cc6b14640abe614928fb4039
+      internalID: -1606122719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 9_Big
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 48
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e3df625a0204446982ceba5e6da889
+      internalID: 872402728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0_Small
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2bbc70095bb2e841afac2df89decf35
+      internalID: -1916805918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_Small
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 16
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404aaadb7897fd046aac55489193a17f
+      internalID: -188624668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_Small
       rect:
         serializedVersion: 2
         x: 37
-        y: 66
-        width: 15
-        height: 22
-      alignment: 9
-      pivot: {x: 0.5, y: 0.36363637}
+        y: 16
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4f08fb0b4d3e2045b584eae0d8a2901
-      internalID: -1751961197
+      spriteID: 05e8ef371a7942043a6c5387f5a1a6f1
+      internalID: 867767065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomberman_21
+      name: 3_Small
       rect:
         serializedVersion: 2
-        x: 54
-        y: 66
-        width: 19
-        height: 22
-      alignment: 9
-      pivot: {x: 0.5, y: 0.36363637}
+        x: 49
+        y: 16
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b1b1b3dee8515b46872d1c23b14e2b2
-      internalID: -2064881978
+      spriteID: 7d73b232f90a8774098d6045c25332b1
+      internalID: -771667640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomberman_22
+      name: 4_Small
       rect:
         serializedVersion: 2
-        x: 75
-        y: 66
-        width: 21
-        height: 22
-      alignment: 9
-      pivot: {x: 0.5, y: 0.36363637}
+        x: 61
+        y: 16
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e3a46e0fe9dd9d4babdfe97e8046222
-      internalID: -1381684996
+      spriteID: 8b9048fc5d3e15440acea58527d59709
+      internalID: -750153337
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomberman_23
+      name: 5_Small
       rect:
         serializedVersion: 2
-        x: 98
-        y: 66
-        width: 22
-        height: 21
-      alignment: 9
-      pivot: {x: 0.5, y: 0.3809524}
+        x: 73
+        y: 16
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99318ac70a30cd1488d4628d9b37ed47
-      internalID: 581750444
+      spriteID: da5823472f81b424fa88e3e530901834
+      internalID: -1521703149
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bomberman_24
+      name: 6_Small
       rect:
         serializedVersion: 2
-        x: 122
-        y: 66
-        width: 22
-        height: 20
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+        x: 85
+        y: 16
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8929038acc5737a43935cb9e6da47718
-      internalID: -1126043043
+      spriteID: 9794b29c586dc094cb4d23dab528d60a
+      internalID: 1213626423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 7_Small
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 341d60d17d0656a4497c85fe1056616b
+      internalID: 1423590293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8_Small
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 16
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1246de845b26346a326037719e9d52
+      internalID: -495743053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 9_Small
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 16
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5811e6a0243f3234c9752ae3548ba69e
+      internalID: -399429062
       vertices: []
       indices: 
       edges: []
@@ -640,31 +682,38 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bomberman_12: -165118978
-      Bomberman_0: -1253908793
-      Bomberman_4: -1487997052
-      Bomberman_11: 1836122501
-      Bomberman_15: 1477175389
-      Bomberman_6: 1794652294
-      Bomberman_20: -1751961197
-      Bomberman_21: -2064881978
-      Bomberman_14: -1188736491
-      Bomberman_5: 95746290
-      Bomberman_9: -1588333536
-      Bomberman_7: -574252798
-      Bomberman_2: 356387158
-      Bomberman_22: -1381684996
-      Bomberman_1: 1175626653
-      Bomberman_3: -1767568654
-      Bomberman_24: -1126043043
-      Bomberman_8: -775212022
-      Bomberman_10: 2040194018
-      Bomberman_13: -1137725233
-      Bomberman_16: -1344298681
-      Bomberman_17: -724121718
-      Bomberman_23: 581750444
-      Bomberman_18: 1591321856
-      Bomberman_19: 802435214
+      Colon: 17852403
+      5_Big: 455501814
+      7_Big: -423170281
+      1_Small: -188624668
+      4_Small: -750153337
+      Quit: -350205471
+      Play_Game: -1542224473
+      3_Small: -771667640
+      2_Small: 867767065
+      Win_Score: -711373805
+      TextsAndNumbers_11: 1042793528
+      0_Small: -1916805918
+      Play_Again: 1713395770
+      0_Big: 829502843
+      9_Big: 872402728
+      5_Small: -1521703149
+      Players: 1485444729
+      TextsAndNumbers_5: -1747736561
+      TextsAndNumbers_1: 1980069783
+      1_Big: -691891370
+      7_Small: 1423590293
+      3_Big: 445132922
+      6_Big: 878338306
+      4_Big: 1370601793
+      TextsAndNumbers_9: -1052664859
+      8_Small: -495743053
+      9_Small: -399429062
+      6_Small: 1213626423
+      Main_Menu: -90203374
+      2_Big: -1212838821
+      TextsAndNumbers_6: 924603291
+      8_Big: -1606122719
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
