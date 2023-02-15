@@ -7,12 +7,16 @@ using System;
 
 using static ScoreManager;
 using static LevelManager;
+using UnityEditor.Animations;
 
 public class PlayerFunctions : MonoBehaviour
 {
     //References
     private Rigidbody2D _rgbd;
     private Animator _animator;
+    private SpriteRenderer _spriteRenderer;
+
+    [SerializeField] AnimatorOverrideController _onFireController;
 
     //Layers
     private LayerMask _obstacleLayer;
@@ -55,9 +59,19 @@ public class PlayerFunctions : MonoBehaviour
     }
     private List<GameObject> _bombList = new List<GameObject>();
 
+    //Iframes
+    private float _iFrameTimer = 0;
+    private const float IFRAME = 1f;
+    private bool _isIFrame = false;
+
+    //Afk timer
+    private float _afkTimer = 0;
+    private const float AFK_TIME = 3f;
+    private bool _isAfk = false;
+
     //Stats
     [SerializeField] private int _playerNum;
-    public int PlayerNum { get => _playerNum; }
+    public int PlayerNum { get => _playerNum; set => _playerNum = value; }
     
     [SerializeField] private int _playerScore;
     public int PlayerScore { get => _playerScore; set => _playerScore = value; }
@@ -76,12 +90,46 @@ public class PlayerFunctions : MonoBehaviour
 
     private void Start()
     {
-        _rgbd = GetComponentInChildren<Rigidbody2D>();
+        _rgbd = GetComponent<Rigidbody2D>();
         _animator = GetComponentInChildren<Animator>();
+        _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 
         _obstacleLayer = LayerMask.GetMask("Obstacle", "SoftWall");
         _bombLayer = LayerMask.GetMask("Bomb");
         _directionCheckLayer = LayerMask.GetMask("Obstacle", "Bomb", "SoftWall");
+    }
+
+    private void Update()
+    {
+        if (_isAfk && !_isDead)
+        {
+            if (_afkTimer >= AFK_TIME)
+            {
+                _animator.SetBool("isAfk", _isAfk);
+            }
+
+            _afkTimer += Time.deltaTime;
+        }
+        else
+        {
+            _afkTimer = 0;
+            _animator.SetBool("isAfk", _isAfk);
+        }
+
+        if (_isIFrame && !_isDead)
+        {
+            if (_iFrameTimer >= IFRAME)
+            {
+                _isIFrame = false;
+                _iFrameTimer = 0;
+            }
+
+            _spriteRenderer.enabled = !_spriteRenderer.enabled;
+
+            _iFrameTimer += Time.deltaTime;
+        }
+        else
+            _spriteRenderer.enabled = true;
     }
 
     private void FixedUpdate()
@@ -94,6 +142,12 @@ public class PlayerFunctions : MonoBehaviour
             _currentInput = _inputs[0];
         else
             _currentInput = -1; //-1 = No input
+
+
+        if (_currentInput == -1)
+            _isAfk = true;
+        else
+            _isAfk = false;
 
         //Process input
         if (_currentInput == 0)
@@ -363,8 +417,9 @@ public class PlayerFunctions : MonoBehaviour
     
     public void OnFire()
     {
+        _isIFrame = true;
         _isOnFire = true;
-        //On fire anim: ON
+        _animator.runtimeAnimatorController = _onFireController;
         Invoke("Die", 10.0f);
         _power = MAX_POWER;
         _moveSpeed *= 1.2f;
@@ -372,6 +427,7 @@ public class PlayerFunctions : MonoBehaviour
 
     public void Die()
     {
+        _isIFrame = true;
         _animator.SetBool("isDead", true);
         _isDead = true;
 
@@ -409,16 +465,19 @@ public class PlayerFunctions : MonoBehaviour
         }
 
         //Check when getting hit by fire
-        if (collision.gameObject.tag == "Fire")
+        if (!_isIFrame)
         {
-            if (_isOnFire)
+            if (collision.gameObject.tag == "Fire")
+            {
+                if (_isOnFire)
+                    Die();
+                else
+                    OnFire();
+            }
+            else if (collision.gameObject.tag == "FireOneShot")
+            {
                 Die();
-            else
-                OnFire();
-        }
-        else if (collision.gameObject.tag == "FireOneShot")
-        {
-            Die();
+            }
         }
     }
 }

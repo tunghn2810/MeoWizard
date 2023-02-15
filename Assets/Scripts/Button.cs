@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class Button : MonoBehaviour
 {
-    public event Action OnSubmit;
+    public UnityEvent OnSubmit;
 
     public void Submit()
     {

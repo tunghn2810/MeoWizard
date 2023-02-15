@@ -47,7 +47,7 @@ public class SceneLoader : MonoBehaviour
         {
             I_GameplayManager.OnSceneLoaded();
         }
-        else if (scene.name == "MainMenu")
+        else if (scene.name == "MainMenu" || scene.name == "Victory")
         {
             I_InputProcessor.OnSceneLoaded();
         }
@@ -55,7 +55,7 @@ public class SceneLoader : MonoBehaviour
 
     private void Start()
     {
-        //SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void Load(string sceneName)
@@ -88,6 +88,16 @@ public class SceneLoader : MonoBehaviour
         if (I_GameStateManager.NextGameState == GameState.Gameplay)
         {
             I_GameStateManager.EnterGame();
+            I_GameStateManager.SetNextState(GameState.Loading);
+        }
+        else if (I_GameStateManager.NextGameState == GameState.MainMenu)
+        {
+            I_GameStateManager.EnterMenu();
+            I_GameStateManager.SetNextState(GameState.Loading);
+        }
+        else if (I_GameStateManager.NextGameState == GameState.Victory)
+        {
+            I_GameStateManager.EnterVictory();
             I_GameStateManager.SetNextState(GameState.Loading);
         }
     }

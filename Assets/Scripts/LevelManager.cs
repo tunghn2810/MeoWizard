@@ -4,11 +4,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using static GameStateManager;
+using static GameplayManager;
 using static ScoreManager;
 
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] private List<int> _alivePlayers = new List<int>();
+
+    [SerializeField] private float _roundTimer = 180f;
+    public float RoundTimer { get => _roundTimer; set => _roundTimer = value; }
+    private const float MAX_ROUND_TIMER = 180f;
+    private bool _isPlaying = false;
 
     public static LevelManager I_LevelManager { get; set; }
     private void Awake()
@@ -21,6 +27,23 @@ public class LevelManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void Update()
+    {
+        if (I_ScoreManager.IsGameEnd)
+            return;
+
+        if (_isPlaying)
+        {
+            if (_roundTimer <= 0)
+            {
+                _roundTimer = 0;
+                _isPlaying = false;
+            }
+
+            _roundTimer -= Time.deltaTime;
         }
     }
 
@@ -39,16 +62,41 @@ public class LevelManager : MonoBehaviour
         {
             //DRAW
         }
+
         StartCoroutine(EndGamePause());
+    }
+
+    public void StartPause()
+    {
+        StartCoroutine(StartGamePause());
+    }
+
+    private IEnumerator StartGamePause()
+    {
+        yield return new WaitForSeconds(3f);
+
+        I_GameplayManager.EnablePlayers();
+
+        _isPlaying = true;
     }
 
     private IEnumerator EndGamePause()
     {
         yield return new WaitForSeconds(5f);
         ResetPlayers();
+        ResetTimer();
 
-        I_GameStateManager.SetNextState(GameState.Gameplay);
-        I_GameStateManager.EnterLoading();
+        if (I_ScoreManager.IsGameEnd)
+        {
+            _isPlaying = false;
+            I_GameStateManager.SetNextState(GameState.Victory);
+            I_GameStateManager.EnterLoading();
+        }
+        else
+        {
+            I_GameStateManager.SetNextState(GameState.Gameplay);
+            I_GameStateManager.EnterLoading();
+        }
     }
 
     public void AddPlayer(int playerNum)
@@ -64,5 +112,10 @@ public class LevelManager : MonoBehaviour
     public void ResetPlayers()
     {
         _alivePlayers.Clear();
+    }
+
+    public void ResetTimer()
+    {
+        _roundTimer = MAX_ROUND_TIMER;
     }
 }

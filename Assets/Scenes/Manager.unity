@@ -353,19 +353,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6340528622821527464, guid: 84ecbbdedef4e7b40af780ce7bad61c6, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.09731544
+      value: 0.28417265
       objectReference: {fileID: 0}
     - target: {fileID: 6340528622821527464, guid: 84ecbbdedef4e7b40af780ce7bad61c6, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.041984733
+      value: 0.13149847
       objectReference: {fileID: 0}
     - target: {fileID: 6340528622821527464, guid: 84ecbbdedef4e7b40af780ce7bad61c6, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.80536914
+      value: 0.4316547
       objectReference: {fileID: 0}
     - target: {fileID: 6340528622821527464, guid: 84ecbbdedef4e7b40af780ce7bad61c6, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.9160305
+      value: 0.73394495
       objectReference: {fileID: 0}
     - target: {fileID: 6340528622821527467, guid: 84ecbbdedef4e7b40af780ce7bad61c6, type: 3}
       propertyPath: m_Name
@@ -498,6 +498,26 @@ PrefabInstance:
       propertyPath: _playerCount
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3315222241084781351, guid: 5c0cb00056a8c3447aafb58c1b667623, type: 3}
+      propertyPath: _playerPrefabs.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3315222241084781351, guid: 5c0cb00056a8c3447aafb58c1b667623, type: 3}
+      propertyPath: _playerPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 1800014734691825823, guid: 6931b11cade3bda45b957d09eb303190, type: 3}
+    - target: {fileID: 3315222241084781351, guid: 5c0cb00056a8c3447aafb58c1b667623, type: 3}
+      propertyPath: _playerPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 7883970503321699922, guid: 382fae7a038eae147aa7aeaf87162a38, type: 3}
+    - target: {fileID: 3315222241084781351, guid: 5c0cb00056a8c3447aafb58c1b667623, type: 3}
+      propertyPath: _playerPrefabs.Array.data[2]
+      value: 
+      objectReference: {fileID: 1483750751156368925, guid: 920c5a9c935f4dc40a2beebb1ed81a0c, type: 3}
+    - target: {fileID: 3315222241084781351, guid: 5c0cb00056a8c3447aafb58c1b667623, type: 3}
+      propertyPath: _playerPrefabs.Array.data[3]
+      value: 
+      objectReference: {fileID: 624858181713446834, guid: 8162056cac95fa74c94247fffc53f16b, type: 3}
     - target: {fileID: 5366170766612717620, guid: 5c0cb00056a8c3447aafb58c1b667623, type: 3}
       propertyPath: m_Name
       value: GameManager

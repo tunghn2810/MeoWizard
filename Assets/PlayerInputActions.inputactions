@@ -78,7 +78,7 @@
                     "path": "<Gamepad>/dpad/up",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Controller",
+                    "groups": "Controller_1",
                     "action": "MoveUp",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -90,6 +90,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard_2",
+                    "action": "MoveUp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d0d820ef-1c31-4b07-842e-c19a76368faf",
+                    "path": "<Gamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Controller_2",
                     "action": "MoveUp",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -111,7 +122,7 @@
                     "path": "<Gamepad>/dpad/down",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Controller",
+                    "groups": "Controller_1",
                     "action": "MoveDown",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -123,6 +134,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard_2",
+                    "action": "MoveDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0b1acd7f-8d6f-4e34-a693-22a45caa815f",
+                    "path": "<Gamepad>/dpad/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Controller_2",
                     "action": "MoveDown",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -144,7 +166,7 @@
                     "path": "<Gamepad>/dpad/left",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Controller",
+                    "groups": "Controller_1",
                     "action": "MoveLeft",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -156,6 +178,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard_2",
+                    "action": "MoveLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a4725055-5b11-429e-a825-267f5ffa9618",
+                    "path": "<Gamepad>/dpad/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Controller_2",
                     "action": "MoveLeft",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -177,7 +210,7 @@
                     "path": "<Gamepad>/dpad/right",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Controller",
+                    "groups": "Controller_1",
                     "action": "MoveRight",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -189,6 +222,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard_2",
+                    "action": "MoveRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0bd19f44-0e12-4bf6-8c31-5b0c4e0a326e",
+                    "path": "<Gamepad>/dpad/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Controller_2",
                     "action": "MoveRight",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -210,7 +254,7 @@
                     "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Controller",
+                    "groups": "Controller_1",
                     "action": "A",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -222,6 +266,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard_2",
+                    "action": "A",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "295a4497-b47f-4dc7-a85a-437cba00bfeb",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Controller_2",
                     "action": "A",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -243,7 +298,7 @@
                     "path": "<Gamepad>/buttonNorth",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Controller",
+                    "groups": "Controller_1",
                     "action": "Join",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -255,6 +310,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard_2",
+                    "action": "Join",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9762ae32-c251-4ca3-b07a-2879229952fd",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Controller_2",
                     "action": "Join",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -275,8 +341,8 @@
             ]
         },
         {
-            "name": "Controller",
-            "bindingGroup": "Controller",
+            "name": "Controller_1",
+            "bindingGroup": "Controller_1",
             "devices": [
                 {
                     "devicePath": "<Gamepad>",
@@ -291,6 +357,17 @@
             "devices": [
                 {
                     "devicePath": "<Keyboard>",
+                    "isOptional": true,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Controller_2",
+            "bindingGroup": "Controller_2",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
                     "isOptional": false,
                     "isOR": false
                 }
