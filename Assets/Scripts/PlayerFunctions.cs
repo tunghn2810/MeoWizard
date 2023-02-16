@@ -16,7 +16,8 @@ public class PlayerFunctions : MonoBehaviour
     private Animator _animator;
     private SpriteRenderer _spriteRenderer;
 
-    [SerializeField] AnimatorOverrideController _onFireController;
+    [SerializeField] private AnimatorOverrideController _onFireController;
+    [SerializeField] private GameObject _bombPrefab;
 
     //Layers
     private LayerMask _obstacleLayer;
@@ -50,14 +51,9 @@ public class PlayerFunctions : MonoBehaviour
     private bool _isMovingLeft = false;
     private bool _isMovingRight = false;
 
-    //For bomb planting
-    public event EventHandler<OnPlantBombEventargs> OnPlantBomb;
-    public class OnPlantBombEventargs : EventArgs
-    {
-        public int bombPower;
-        public PlayerFunctions player;
-    }
+    //For bomb planting 
     [SerializeField] private List<GameObject> _bombList = new List<GameObject>();
+    [SerializeField] private Tile _currentTile;
 
     //Iframes
     private float _iFrameTimer = 0;
@@ -390,7 +386,21 @@ public class PlayerFunctions : MonoBehaviour
             return;
 
         if (_bombList.Count < _bombCap)
-            OnPlantBomb?.Invoke(this, new OnPlantBombEventargs { bombPower = _power, player = this });
+            SpawnBomb();
+            //OnPlantBomb?.Invoke(this, new OnPlantBombEventargs { bombPower = _power, player = this });
+    }
+
+    private void SpawnBomb()
+    {
+        if (!_currentTile.HasBomb)
+        {
+            Vector3 bombPosition = new Vector3(_currentTile.transform.position.x, _currentTile.transform.position.y, 0);
+            GameObject newBomb = Instantiate(_bombPrefab, bombPosition, Quaternion.identity);
+            newBomb.GetComponent<Bomb>().Power = _power;
+            newBomb.GetComponent<Bomb>().Player = this;
+            newBomb.GetComponent<Bomb>().IsOneShot = _isOnFire;
+            AddBomb(newBomb);
+        }
     }
 
     public void AddBomb(GameObject bomb)
@@ -432,8 +442,6 @@ public class PlayerFunctions : MonoBehaviour
         _isDead = true;
 
         I_LevelManager.RemovePlayer(_playerNum);
-
-        I_LevelManager.RoundEndCheck();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -441,6 +449,8 @@ public class PlayerFunctions : MonoBehaviour
         //Check when entering a new tile
         if (collision.gameObject.layer == LayerMask.NameToLayer("Grass"))
         {
+            _currentTile = collision.gameObject.GetComponent<Tile>();
+
             //Check if currently moving horizontally or vertically
             if (_moveDirection.x == 0)
                 _currentlyHorz = false;

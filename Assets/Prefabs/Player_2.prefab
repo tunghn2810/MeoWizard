@@ -455,6 +455,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _onFireController: {fileID: 22100000, guid: 70813c414257fa4439465fd0697854c4, type: 2}
+  _bombPrefab: {fileID: 1938464981276590232, guid: 06ab1857052cc114aa2a7cb8361fb962, type: 3}
   _moveSpeed: 0.064
   _raycastOrigin: {fileID: 134931364543131643}
   _outerRaycasts:
@@ -467,8 +468,11 @@ MonoBehaviour:
   - {fileID: 134931363097831605}
   - {fileID: 134931363469447730}
   - {fileID: 134931363990657308}
+  _bombList: []
+  _currentTile: {fileID: 0}
   _playerNum: 0
   _playerScore: 0
+  _bombCap: 2
 --- !u!114 &9096805060335143115
 MonoBehaviour:
   m_ObjectHideFlags: 0

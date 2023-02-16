@@ -72,6 +72,9 @@ public class InputProcessor : MonoBehaviour
                 _menuControl.Submit();
         }
         else if (I_GameStateManager.CurrentGameState == GameState.Gameplay)
-            player.PlantBomb();
+        {
+            if (context.phase == InputActionPhase.Performed)
+                player.PlantBomb();
+        }
     }
 }

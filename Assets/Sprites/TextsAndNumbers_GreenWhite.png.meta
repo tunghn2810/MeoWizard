@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 803f0c24c75145a40b0358d4a5a2db19
+guid: da67f0c9bcff48a41bd8800ab015ea9b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Play_Game
+      name: TextsAndNumbers_GreenWhite_0
       rect:
         serializedVersion: 2
         x: 16
@@ -113,20 +113,20 @@ TextureImporter:
         width: 140
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fea78ae722224744982661f4315b4497
-      internalID: -1542224473
+      spriteID: 848a15de750e3cf4689952c65e7785a5
+      internalID: -849696492
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Players
+      name: TextsAndNumbers_GreenWhite_2
       rect:
         serializedVersion: 2
         x: 16
@@ -134,20 +134,20 @@ TextureImporter:
         width: 112
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 752a79c29d40c984db6e57e523644e8f
-      internalID: 1485444729
+      spriteID: f245351d49e7a9446a526293f6a0752e
+      internalID: 1582746278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Colon
+      name: TextsAndNumbers_GreenWhite_3
       rect:
         serializedVersion: 2
         x: 136
@@ -155,41 +155,83 @@ TextureImporter:
         width: 8
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29d90fa131b09d245855922935051d7a
-      internalID: 17852403
+      spriteID: c72b471d7ce997340b4dfe1563c96513
+      internalID: 2086860933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Win_Score
+      name: TextsAndNumbers_GreenWhite_4
       rect:
         serializedVersion: 2
         x: 16
         y: 176
-        width: 130
+        width: 44
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17450e48052ab7f47b98390a5b56bc3f
-      internalID: -711373805
+      spriteID: bf13ce0b1f13d43489771301e85bc91c
+      internalID: 1311157144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Quit
+      name: TextsAndNumbers_GreenWhite_5
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 176
+        width: 78
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49dc717ce141c5346b0f9f344d593476
+      internalID: 227434176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextsAndNumbers_GreenWhite_6
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 178
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2197a5395111f584687c999be01707ec
+      internalID: 630976511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextsAndNumbers_GreenWhite_7
       rect:
         serializedVersion: 2
         x: 16
@@ -197,62 +239,104 @@ TextureImporter:
         width: 56
         height: 22
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8629ea4b42c456f478b56b93ed38a0b1
-      internalID: -350205471
+      spriteID: 8d1488335a16b604dbef80c3e4c19c6b
+      internalID: 884131066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Play_Again
+      name: TextsAndNumbers_GreenWhite_8
       rect:
         serializedVersion: 2
         x: 16
         y: 112
-        width: 146
+        width: 66
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9572c9d5363f14f458b87c9851c6853d
-      internalID: 1713395770
+      spriteID: 3831a79fd59397b4dbd8c692df85c469
+      internalID: 839041598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Menu
+      name: TextsAndNumbers_GreenWhite_9
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 112
+        width: 72
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888c17aba2951e040b19f896661ece24
+      internalID: -829653244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextsAndNumbers_GreenWhite_10
       rect:
         serializedVersion: 2
         x: 16
         y: 80
-        width: 134
+        width: 60
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49eb08a4acb3e02488f3a89f4753cd41
-      internalID: -90203374
+      spriteID: d5f8f3ab75737f5489892de94018b3bd
+      internalID: -1876852046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0_Big
+      name: TextsAndNumbers_GreenWhite_11
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 80
+        width: 66
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a41579e5934a274fa249f5e9a8c73d5
+      internalID: -632931866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextsAndNumbers_GreenWhite_12
       rect:
         serializedVersion: 2
         x: 16
@@ -260,41 +344,41 @@ TextureImporter:
         width: 16
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48c1875ece0c1e541a47c335ef1a837e
-      internalID: 829502843
+      spriteID: 64bd0f2e8853e234c9ca3e70b9fb7b51
+      internalID: -787557583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1_Big
+      name: TextsAndNumbers_GreenWhite_13
       rect:
         serializedVersion: 2
-        x: 37
+        x: 40
         y: 48
-        width: 16
+        width: 10
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a29566eb51262b41848af27c87c6152
-      internalID: -691891370
+      spriteID: b6dd7b069d605c14fbc556676796f438
+      internalID: 890717691
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2_Big
+      name: TextsAndNumbers_GreenWhite_14
       rect:
         serializedVersion: 2
         x: 58
@@ -302,20 +386,20 @@ TextureImporter:
         width: 16
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 115d1c07438eede4bbb99958dc851754
-      internalID: -1212838821
+      spriteID: fc525028d3329024e95e584bdcf71b52
+      internalID: -1672578411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 3_Big
+      name: TextsAndNumbers_GreenWhite_15
       rect:
         serializedVersion: 2
         x: 82
@@ -323,20 +407,20 @@ TextureImporter:
         width: 16
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 689e5e7c43d19cd40943d05a0c053726
-      internalID: 445132922
+      spriteID: dd8d4b1ba8ff7994988df12e79e47b2e
+      internalID: -824526959
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 4_Big
+      name: TextsAndNumbers_GreenWhite_16
       rect:
         serializedVersion: 2
         x: 106
@@ -344,20 +428,20 @@ TextureImporter:
         width: 16
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b12a244632be6604689a98c0384be922
-      internalID: 1370601793
+      spriteID: 7a9ce4988d962784f9f37221a64a7243
+      internalID: 1335333266
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5_Big
+      name: TextsAndNumbers_GreenWhite_17
       rect:
         serializedVersion: 2
         x: 130
@@ -365,20 +449,20 @@ TextureImporter:
         width: 16
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e125d0e9a60935d4abeb549d87c7c7cc
-      internalID: 455501814
+      spriteID: 4b42a56468937de4699d6a76460d1851
+      internalID: 1099400920
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 6_Big
+      name: TextsAndNumbers_GreenWhite_18
       rect:
         serializedVersion: 2
         x: 154
@@ -386,20 +470,20 @@ TextureImporter:
         width: 16
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edfa710c1a0abbf49a0ac51486265bb7
-      internalID: 878338306
+      spriteID: a2e39416838940b4aa874ab4e218c225
+      internalID: -946796874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 7_Big
+      name: TextsAndNumbers_GreenWhite_19
       rect:
         serializedVersion: 2
         x: 175
@@ -407,20 +491,20 @@ TextureImporter:
         width: 16
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccc3579c37b6f4946b2b8e546c3f3ecd
-      internalID: -423170281
+      spriteID: 0389b9b44aae1cc40a884f96f755c339
+      internalID: -633141653
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 8_Big
+      name: TextsAndNumbers_GreenWhite_20
       rect:
         serializedVersion: 2
         x: 200
@@ -428,20 +512,20 @@ TextureImporter:
         width: 16
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36e05bf0cc6b14640abe614928fb4039
-      internalID: -1606122719
+      spriteID: b075c7a7668b5bf4ca498a1de41da37b
+      internalID: -1807121173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 9_Big
+      name: TextsAndNumbers_GreenWhite_21
       rect:
         serializedVersion: 2
         x: 224
@@ -449,20 +533,20 @@ TextureImporter:
         width: 16
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2e3df625a0204446982ceba5e6da889
-      internalID: 872402728
+      spriteID: 199599056f96e9e45b10f57a99030bc6
+      internalID: 647515083
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0_Small
+      name: TextsAndNumbers_GreenWhite_22
       rect:
         serializedVersion: 2
         x: 16
@@ -470,41 +554,41 @@ TextureImporter:
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2bbc70095bb2e841afac2df89decf35
-      internalID: -1916805918
+      spriteID: 642cf51c28c6b4c44ad9a0fbaf3cfea3
+      internalID: -1833457630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1_Small
+      name: TextsAndNumbers_GreenWhite_23
       rect:
         serializedVersion: 2
-        x: 27
+        x: 28
         y: 16
-        width: 8
+        width: 5
         height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 404aaadb7897fd046aac55489193a17f
-      internalID: -188624668
+      spriteID: 27adda2de92f4c64e873a879a91ec63c
+      internalID: 2091998168
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2_Small
+      name: TextsAndNumbers_GreenWhite_24
       rect:
         serializedVersion: 2
         x: 37
@@ -512,20 +596,20 @@ TextureImporter:
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05e8ef371a7942043a6c5387f5a1a6f1
-      internalID: 867767065
+      spriteID: d2a06ed83a624d240ad55814c5fc40d4
+      internalID: 101468038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 3_Small
+      name: TextsAndNumbers_GreenWhite_25
       rect:
         serializedVersion: 2
         x: 49
@@ -533,20 +617,20 @@ TextureImporter:
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d73b232f90a8774098d6045c25332b1
-      internalID: -771667640
+      spriteID: 42f926487f0ae4a458d3211a1cd5b359
+      internalID: -666742757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 4_Small
+      name: TextsAndNumbers_GreenWhite_26
       rect:
         serializedVersion: 2
         x: 61
@@ -554,20 +638,20 @@ TextureImporter:
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b9048fc5d3e15440acea58527d59709
-      internalID: -750153337
+      spriteID: b4dc86be4b5fe244e8cb06e4ea464ea7
+      internalID: 1355672531
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5_Small
+      name: TextsAndNumbers_GreenWhite_27
       rect:
         serializedVersion: 2
         x: 73
@@ -575,20 +659,20 @@ TextureImporter:
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da5823472f81b424fa88e3e530901834
-      internalID: -1521703149
+      spriteID: 719dc309519ea4e469f37ab0a4673ab1
+      internalID: -1246506950
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 6_Small
+      name: TextsAndNumbers_GreenWhite_28
       rect:
         serializedVersion: 2
         x: 85
@@ -596,20 +680,20 @@ TextureImporter:
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9794b29c586dc094cb4d23dab528d60a
-      internalID: 1213626423
+      spriteID: 5ee1fcf47b034f749856487472c03556
+      internalID: -621246580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 7_Small
+      name: TextsAndNumbers_GreenWhite_29
       rect:
         serializedVersion: 2
         x: 96
@@ -617,20 +701,20 @@ TextureImporter:
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 341d60d17d0656a4497c85fe1056616b
-      internalID: 1423590293
+      spriteID: d7398bb3e4f16bb499c9d001c8c3056d
+      internalID: 947160454
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 8_Small
+      name: TextsAndNumbers_GreenWhite_30
       rect:
         serializedVersion: 2
         x: 108
@@ -638,20 +722,20 @@ TextureImporter:
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad1246de845b26346a326037719e9d52
-      internalID: -495743053
+      spriteID: ab73f033c85336c4a9efb2cdeb3aecee
+      internalID: 191340274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 9_Small
+      name: TextsAndNumbers_GreenWhite_31
       rect:
         serializedVersion: 2
         x: 120
@@ -659,14 +743,14 @@ TextureImporter:
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5811e6a0243f3234c9752ae3548ba69e
-      internalID: -399429062
+      spriteID: a7caeb26f799dfc4d90c8db0129bf335
+      internalID: 1391959109
       vertices: []
       indices: 
       edges: []
@@ -682,38 +766,38 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Colon: 17852403
-      5_Big: 455501814
-      7_Big: -423170281
-      1_Small: -188624668
-      4_Small: -750153337
-      Quit: -350205471
-      Play_Game: -1542224473
-      3_Small: -771667640
-      2_Small: 867767065
-      Win_Score: -711373805
-      TextsAndNumbers_11: 1042793528
-      0_Small: -1916805918
-      Play_Again: 1713395770
-      0_Big: 829502843
-      9_Big: 872402728
-      5_Small: -1521703149
-      Players: 1485444729
-      TextsAndNumbers_5: -1747736561
-      TextsAndNumbers_1: 1980069783
-      1_Big: -691891370
-      7_Small: 1423590293
-      3_Big: 445132922
-      6_Big: 878338306
-      4_Big: 1370601793
-      TextsAndNumbers_9: -1052664859
-      8_Small: -495743053
-      9_Small: -399429062
-      6_Small: 1213626423
-      Main_Menu: -90203374
-      2_Big: -1212838821
-      TextsAndNumbers_6: 924603291
-      8_Big: -1606122719
+      TextsAndNumbers_GreenWhite_1: 711880054
+      TextsAndNumbers_GreenWhite_26: 1355672531
+      TextsAndNumbers_GreenWhite_4: 1311157144
+      TextsAndNumbers_GreenWhite_10: -1876852046
+      TextsAndNumbers_GreenWhite_19: -633141653
+      TextsAndNumbers_GreenWhite_27: -1246506950
+      TextsAndNumbers_GreenWhite_31: 1391959109
+      TextsAndNumbers_GreenWhite_17: 1099400920
+      TextsAndNumbers_GreenWhite_6: 630976511
+      TextsAndNumbers_GreenWhite_14: -1672578411
+      TextsAndNumbers_GreenWhite_21: 647515083
+      TextsAndNumbers_GreenWhite_16: 1335333266
+      TextsAndNumbers_GreenWhite_15: -824526959
+      TextsAndNumbers_GreenWhite_2: 1582746278
+      TextsAndNumbers_GreenWhite_13: 890717691
+      TextsAndNumbers_GreenWhite_5: 227434176
+      TextsAndNumbers_GreenWhite_25: -666742757
+      TextsAndNumbers_GreenWhite_22: -1833457630
+      TextsAndNumbers_GreenWhite_18: -946796874
+      TextsAndNumbers_GreenWhite_24: 101468038
+      TextsAndNumbers_GreenWhite_8: 839041598
+      TextsAndNumbers_GreenWhite_7: 884131066
+      TextsAndNumbers_GreenWhite_9: -829653244
+      TextsAndNumbers_GreenWhite_3: 2086860933
+      TextsAndNumbers_GreenWhite_20: -1807121173
+      TextsAndNumbers_GreenWhite_29: 947160454
+      TextsAndNumbers_GreenWhite_11: -632931866
+      TextsAndNumbers_GreenWhite_0: -849696492
+      TextsAndNumbers_GreenWhite_30: 191340274
+      TextsAndNumbers_GreenWhite_23: 2091998168
+      TextsAndNumbers_GreenWhite_12: -787557583
+      TextsAndNumbers_GreenWhite_28: -621246580
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

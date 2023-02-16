@@ -11552,8 +11552,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 36, y: 0}
-  m_SizeDelta: {x: 10, y: 20}
+  m_AnchoredPosition: {x: 32, y: 0}
+  m_SizeDelta: {x: 16, y: 20}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1143655700
 MonoBehaviour:
@@ -23626,19 +23626,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6340528622821527464, guid: 84ecbbdedef4e7b40af780ce7bad61c6, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.029354207
+      value: 0.15714286
       objectReference: {fileID: 0}
     - target: {fileID: 6340528622821527464, guid: 84ecbbdedef4e7b40af780ce7bad61c6, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.033009708
+      value: 0.021868786
       objectReference: {fileID: 0}
     - target: {fileID: 6340528622821527464, guid: 84ecbbdedef4e7b40af780ce7bad61c6, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.93933463
+      value: 0.6857143
       objectReference: {fileID: 0}
     - target: {fileID: 6340528622821527464, guid: 84ecbbdedef4e7b40af780ce7bad61c6, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.93203884
+      value: 0.9542743
       objectReference: {fileID: 0}
     - target: {fileID: 6340528622821527467, guid: 84ecbbdedef4e7b40af780ce7bad61c6, type: 3}
       propertyPath: m_Name

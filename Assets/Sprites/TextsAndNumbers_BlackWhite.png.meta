@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 803f0c24c75145a40b0358d4a5a2db19
+guid: b2b095cb52e14a14bb068bb1979c4489
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Play_Game
+      name: TextsAndNumbers_BlackWhite_0
       rect:
         serializedVersion: 2
         x: 16
@@ -113,20 +113,20 @@ TextureImporter:
         width: 140
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fea78ae722224744982661f4315b4497
-      internalID: -1542224473
+      spriteID: e6f53e4be93ae894c91aaa3b4622212c
+      internalID: -1552616704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Players
+      name: TextsAndNumbers_BlackWhite_2
       rect:
         serializedVersion: 2
         x: 16
@@ -134,20 +134,20 @@ TextureImporter:
         width: 112
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 752a79c29d40c984db6e57e523644e8f
-      internalID: 1485444729
+      spriteID: 478150849fc72914b98820046e45fcbe
+      internalID: -730251748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Colon
+      name: TextsAndNumbers_BlackWhite_3
       rect:
         serializedVersion: 2
         x: 136
@@ -155,41 +155,83 @@ TextureImporter:
         width: 8
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29d90fa131b09d245855922935051d7a
-      internalID: 17852403
+      spriteID: 42f86eaa54a775a46a996c7b4c56ff3b
+      internalID: -78870917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Win_Score
+      name: TextsAndNumbers_BlackWhite_4
       rect:
         serializedVersion: 2
         x: 16
         y: 176
-        width: 130
+        width: 44
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17450e48052ab7f47b98390a5b56bc3f
-      internalID: -711373805
+      spriteID: 74fcec86bb15f7243a90c8dea41b71b0
+      internalID: 1453857133
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Quit
+      name: TextsAndNumbers_BlackWhite_5
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 176
+        width: 78
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b6141bdb7fb284d8daa434ed9320c6
+      internalID: -1493659184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextsAndNumbers_BlackWhite_6
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 178
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a7673a9eeabc04f8885bc819d131ab
+      internalID: -1268672314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextsAndNumbers_BlackWhite_7
       rect:
         serializedVersion: 2
         x: 16
@@ -197,62 +239,104 @@ TextureImporter:
         width: 56
         height: 22
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8629ea4b42c456f478b56b93ed38a0b1
-      internalID: -350205471
+      spriteID: 5f87a28c0439d344a8fdca2f17b45946
+      internalID: 2042438522
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Play_Again
+      name: TextsAndNumbers_BlackWhite_8
       rect:
         serializedVersion: 2
         x: 16
         y: 112
-        width: 146
+        width: 66
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9572c9d5363f14f458b87c9851c6853d
-      internalID: 1713395770
+      spriteID: 6b95bac84582da6429ba6458739bbe59
+      internalID: 1460883719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Menu
+      name: TextsAndNumbers_BlackWhite_9
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 112
+        width: 72
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06720fc469cbb6142b4c3b9ceeafaa84
+      internalID: 1821708338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextsAndNumbers_BlackWhite_10
       rect:
         serializedVersion: 2
         x: 16
         y: 80
-        width: 134
+        width: 60
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49eb08a4acb3e02488f3a89f4753cd41
-      internalID: -90203374
+      spriteID: ca2b2491e4261634b8b93b16eb307989
+      internalID: 1220297459
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0_Big
+      name: TextsAndNumbers_BlackWhite_11
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 80
+        width: 66
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99397eb2d5362e24593dd23f1e5c6a5e
+      internalID: -721811800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextsAndNumbers_BlackWhite_12
       rect:
         serializedVersion: 2
         x: 16
@@ -260,41 +344,41 @@ TextureImporter:
         width: 16
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48c1875ece0c1e541a47c335ef1a837e
-      internalID: 829502843
+      spriteID: 0c3d1a7197c047749b7a6853888856ec
+      internalID: 336834340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1_Big
+      name: TextsAndNumbers_BlackWhite_13
       rect:
         serializedVersion: 2
-        x: 37
+        x: 40
         y: 48
-        width: 16
+        width: 10
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a29566eb51262b41848af27c87c6152
-      internalID: -691891370
+      spriteID: 2e6e8c0ae3187ec47a05f1b295c8483b
+      internalID: -1756484242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2_Big
+      name: TextsAndNumbers_BlackWhite_14
       rect:
         serializedVersion: 2
         x: 58
@@ -302,20 +386,20 @@ TextureImporter:
         width: 16
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 115d1c07438eede4bbb99958dc851754
-      internalID: -1212838821
+      spriteID: f8fcca3f3b996c442b4c708acd957982
+      internalID: 2137258182
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 3_Big
+      name: TextsAndNumbers_BlackWhite_15
       rect:
         serializedVersion: 2
         x: 82
@@ -323,20 +407,20 @@ TextureImporter:
         width: 16
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 689e5e7c43d19cd40943d05a0c053726
-      internalID: 445132922
+      spriteID: f993925750d9ec1438b8d4852479aca9
+      internalID: 1510118075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 4_Big
+      name: TextsAndNumbers_BlackWhite_16
       rect:
         serializedVersion: 2
         x: 106
@@ -344,20 +428,20 @@ TextureImporter:
         width: 16
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b12a244632be6604689a98c0384be922
-      internalID: 1370601793
+      spriteID: 49a21991b1d33fe45b8a557118e20e11
+      internalID: 602559599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5_Big
+      name: TextsAndNumbers_BlackWhite_17
       rect:
         serializedVersion: 2
         x: 130
@@ -365,20 +449,20 @@ TextureImporter:
         width: 16
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e125d0e9a60935d4abeb549d87c7c7cc
-      internalID: 455501814
+      spriteID: aa5c4020c8ba2734fa8f92b2c4666cd8
+      internalID: 636085865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 6_Big
+      name: TextsAndNumbers_BlackWhite_18
       rect:
         serializedVersion: 2
         x: 154
@@ -386,20 +470,20 @@ TextureImporter:
         width: 16
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edfa710c1a0abbf49a0ac51486265bb7
-      internalID: 878338306
+      spriteID: 3a837000151f0114791fca45aa092a8c
+      internalID: 188216671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 7_Big
+      name: TextsAndNumbers_BlackWhite_19
       rect:
         serializedVersion: 2
         x: 175
@@ -407,20 +491,20 @@ TextureImporter:
         width: 16
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccc3579c37b6f4946b2b8e546c3f3ecd
-      internalID: -423170281
+      spriteID: b52529b8b673b1940aa6e5abb9b60691
+      internalID: 1147995631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 8_Big
+      name: TextsAndNumbers_BlackWhite_20
       rect:
         serializedVersion: 2
         x: 200
@@ -428,20 +512,20 @@ TextureImporter:
         width: 16
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36e05bf0cc6b14640abe614928fb4039
-      internalID: -1606122719
+      spriteID: 56938e3be9e4a124db97b5e6b6a27544
+      internalID: 175809757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 9_Big
+      name: TextsAndNumbers_BlackWhite_21
       rect:
         serializedVersion: 2
         x: 224
@@ -449,20 +533,20 @@ TextureImporter:
         width: 16
         height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2e3df625a0204446982ceba5e6da889
-      internalID: 872402728
+      spriteID: ee5e1d98986fd164694bb6bd8e6f612c
+      internalID: -1069851863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0_Small
+      name: TextsAndNumbers_BlackWhite_22
       rect:
         serializedVersion: 2
         x: 16
@@ -470,41 +554,41 @@ TextureImporter:
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2bbc70095bb2e841afac2df89decf35
-      internalID: -1916805918
+      spriteID: 50d27c9ecad96fb4b80fc05dad35e1ce
+      internalID: 1764692032
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1_Small
+      name: TextsAndNumbers_BlackWhite_23
       rect:
         serializedVersion: 2
-        x: 27
+        x: 28
         y: 16
-        width: 8
+        width: 5
         height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 404aaadb7897fd046aac55489193a17f
-      internalID: -188624668
+      spriteID: f593ddd6a01326048830519e06630f21
+      internalID: 1944047817
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2_Small
+      name: TextsAndNumbers_BlackWhite_24
       rect:
         serializedVersion: 2
         x: 37
@@ -512,20 +596,20 @@ TextureImporter:
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05e8ef371a7942043a6c5387f5a1a6f1
-      internalID: 867767065
+      spriteID: 6634171509f17624e87df9f973d76745
+      internalID: -2049876929
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 3_Small
+      name: TextsAndNumbers_BlackWhite_25
       rect:
         serializedVersion: 2
         x: 49
@@ -533,20 +617,20 @@ TextureImporter:
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d73b232f90a8774098d6045c25332b1
-      internalID: -771667640
+      spriteID: 37c1d53f431d43345924a1d02a7ec1fd
+      internalID: 1532003912
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 4_Small
+      name: TextsAndNumbers_BlackWhite_26
       rect:
         serializedVersion: 2
         x: 61
@@ -554,20 +638,20 @@ TextureImporter:
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b9048fc5d3e15440acea58527d59709
-      internalID: -750153337
+      spriteID: 3ece02c5aa1a8da498b61cb7edd18a18
+      internalID: -1477459426
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5_Small
+      name: TextsAndNumbers_BlackWhite_27
       rect:
         serializedVersion: 2
         x: 73
@@ -575,20 +659,20 @@ TextureImporter:
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da5823472f81b424fa88e3e530901834
-      internalID: -1521703149
+      spriteID: 9ae8b59240402524da2d881eb648db66
+      internalID: 658149467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 6_Small
+      name: TextsAndNumbers_BlackWhite_28
       rect:
         serializedVersion: 2
         x: 85
@@ -596,20 +680,20 @@ TextureImporter:
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9794b29c586dc094cb4d23dab528d60a
-      internalID: 1213626423
+      spriteID: 173b560190e3c4c499558a8db7ccef72
+      internalID: -133874718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 7_Small
+      name: TextsAndNumbers_BlackWhite_29
       rect:
         serializedVersion: 2
         x: 96
@@ -617,20 +701,20 @@ TextureImporter:
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 341d60d17d0656a4497c85fe1056616b
-      internalID: 1423590293
+      spriteID: e3ccbeca149917a43a567b5fdf7f2bf1
+      internalID: -563531323
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 8_Small
+      name: TextsAndNumbers_BlackWhite_30
       rect:
         serializedVersion: 2
         x: 108
@@ -638,20 +722,20 @@ TextureImporter:
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad1246de845b26346a326037719e9d52
-      internalID: -495743053
+      spriteID: 47b98b9d233e7e340af7de82aa6b2c91
+      internalID: 169605324
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 9_Small
+      name: TextsAndNumbers_BlackWhite_31
       rect:
         serializedVersion: 2
         x: 120
@@ -659,14 +743,14 @@ TextureImporter:
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5811e6a0243f3234c9752ae3548ba69e
-      internalID: -399429062
+      spriteID: 19e65a05497a3fe4599d6146e65aee8f
+      internalID: 56247886
       vertices: []
       indices: 
       edges: []
@@ -682,38 +766,38 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Colon: 17852403
-      5_Big: 455501814
-      7_Big: -423170281
-      1_Small: -188624668
-      4_Small: -750153337
-      Quit: -350205471
-      Play_Game: -1542224473
-      3_Small: -771667640
-      2_Small: 867767065
-      Win_Score: -711373805
-      TextsAndNumbers_11: 1042793528
-      0_Small: -1916805918
-      Play_Again: 1713395770
-      0_Big: 829502843
-      9_Big: 872402728
-      5_Small: -1521703149
-      Players: 1485444729
-      TextsAndNumbers_5: -1747736561
-      TextsAndNumbers_1: 1980069783
-      1_Big: -691891370
-      7_Small: 1423590293
-      3_Big: 445132922
-      6_Big: 878338306
-      4_Big: 1370601793
-      TextsAndNumbers_9: -1052664859
-      8_Small: -495743053
-      9_Small: -399429062
-      6_Small: 1213626423
-      Main_Menu: -90203374
-      2_Big: -1212838821
-      TextsAndNumbers_6: 924603291
-      8_Big: -1606122719
+      TextsAndNumbers_BlackWhite_0: -1552616704
+      TextsAndNumbers_BlackWhite_30: 169605324
+      TextsAndNumbers_BlackWhite_24: -2049876929
+      TextsAndNumbers_BlackWhite_16: 602559599
+      TextsAndNumbers_BlackWhite_8: 1460883719
+      TextsAndNumbers_BlackWhite_12: 336834340
+      TextsAndNumbers_BlackWhite_6: -1268672314
+      TextsAndNumbers_BlackWhite_5: -1493659184
+      TextsAndNumbers_BlackWhite_1: -911822636
+      TextsAndNumbers_BlackWhite_21: -1069851863
+      TextsAndNumbers_BlackWhite_4: 1453857133
+      TextsAndNumbers_BlackWhite_27: 658149467
+      TextsAndNumbers_BlackWhite_20: 175809757
+      TextsAndNumbers_BlackWhite_10: 1220297459
+      TextsAndNumbers_BlackWhite_23: 1944047817
+      TextsAndNumbers_BlackWhite_18: 188216671
+      TextsAndNumbers_BlackWhite_2: -730251748
+      TextsAndNumbers_BlackWhite_9: 1821708338
+      TextsAndNumbers_BlackWhite_14: 2137258182
+      TextsAndNumbers_BlackWhite_25: 1532003912
+      TextsAndNumbers_BlackWhite_3: -78870917
+      TextsAndNumbers_BlackWhite_22: 1764692032
+      TextsAndNumbers_BlackWhite_29: -563531323
+      TextsAndNumbers_BlackWhite_26: -1477459426
+      TextsAndNumbers_BlackWhite_7: 2042438522
+      TextsAndNumbers_BlackWhite_19: 1147995631
+      TextsAndNumbers_BlackWhite_11: -721811800
+      TextsAndNumbers_BlackWhite_28: -133874718
+      TextsAndNumbers_BlackWhite_31: 56247886
+      TextsAndNumbers_BlackWhite_15: 1510118075
+      TextsAndNumbers_BlackWhite_13: -1756484242
+      TextsAndNumbers_BlackWhite_17: 636085865
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

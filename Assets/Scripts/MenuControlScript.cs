@@ -33,7 +33,6 @@ public class MenuControlScript : MonoBehaviour
 
     private void Start()
     {
-        I_GameplayManager.PlayerCount = _spriteIndex + 2;
         _cursor.anchoredPosition = _buttons[_cursorIndex - 1].GetComponent<RectTransform>().anchoredPosition + _cursorOffset;
     }
 

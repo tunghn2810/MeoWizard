@@ -37,6 +37,8 @@ public class LevelManager : MonoBehaviour
 
         if (_isPlaying)
         {
+            RoundEndCheck();
+
             if (_roundTimer <= 0)
             {
                 _roundTimer = 0;
@@ -73,7 +75,7 @@ public class LevelManager : MonoBehaviour
 
     private IEnumerator StartGamePause()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1f);
 
         I_GameplayManager.EnablePlayers();
 
