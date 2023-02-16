@@ -9,9 +9,9 @@ using static ScoreManager;
 
 public class LevelManager : MonoBehaviour
 {
-    [SerializeField] private List<int> _alivePlayers = new List<int>();
+    private List<int> _alivePlayers = new List<int>();
 
-    [SerializeField] private float _roundTimer = 180f;
+    private float _roundTimer = 180f;
     public float RoundTimer { get => _roundTimer; set => _roundTimer = value; }
     private const float MAX_ROUND_TIMER = 180f;
     private bool _isPlaying = false;

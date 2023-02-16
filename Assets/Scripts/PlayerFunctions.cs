@@ -26,7 +26,7 @@ public class PlayerFunctions : MonoBehaviour
 
     //Movement
     private Vector2 _moveDirection = Vector2.zero;
-    [SerializeField] private float _moveSpeed;
+    [SerializeField] private float _moveSpeed = 0.064f;
 
     //For checking obstacle and sliding when bumping into one
     [SerializeField] private Transform _raycastOrigin;
@@ -52,8 +52,8 @@ public class PlayerFunctions : MonoBehaviour
     private bool _isMovingRight = false;
 
     //For bomb planting 
-    [SerializeField] private List<GameObject> _bombList = new List<GameObject>();
-    [SerializeField] private Tile _currentTile;
+    private List<GameObject> _bombList = new List<GameObject>();
+    private Tile _currentTile;
 
     //Iframes
     private float _iFrameTimer = 0;
@@ -69,14 +69,14 @@ public class PlayerFunctions : MonoBehaviour
     [SerializeField] private int _playerNum;
     public int PlayerNum { get => _playerNum; set => _playerNum = value; }
     
-    [SerializeField] private int _playerScore;
+    private int _playerScore;
     public int PlayerScore { get => _playerScore; set => _playerScore = value; }
 
     private int _power = 1;
     public int Power { get => _power; set => _power = value; }
     private const int MAX_POWER = 5;
 
-    [SerializeField] private int _bombCap = 2;
+    private int _bombCap = 2;
     public int BombCap { get => _bombCap; set => _bombCap = value; }
     private const int MAX_BOMBCAP = 10;
 

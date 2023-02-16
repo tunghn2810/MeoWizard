@@ -5,7 +5,7 @@ using UnityEngine;
 public class SoftWall : MonoBehaviour
 {
     private Animator _anim;
-    [SerializeField] private GameObject _item;
+    private GameObject _item;
 
     private bool _isDestroyed = false;
 

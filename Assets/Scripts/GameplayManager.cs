@@ -6,7 +6,6 @@ using static GameStateManager;
 using static ScoreManager;
 using static LevelManager;
 using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.Users;
 
 public class GameplayManager : MonoBehaviour
 {
@@ -16,9 +15,9 @@ public class GameplayManager : MonoBehaviour
     private List<InputDevice> _inputDevices = new List<InputDevice>();
     private int _controllerNum = 0;
 
-    [SerializeField] private List<PlayerInput> _playerInputs = new List<PlayerInput>();
+    private List<PlayerInput> _playerInputs = new List<PlayerInput>();
 
-    [SerializeField] private int _playerCount;
+    private int _playerCount = 2;
     public int PlayerCount { get => _playerCount; set => _playerCount = value; }
     
     public static GameplayManager I_GameplayManager { get; set; }

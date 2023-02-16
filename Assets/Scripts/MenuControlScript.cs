@@ -13,11 +13,13 @@ public class MenuControlScript : MonoBehaviour
     private Button[] _buttons;
 
     //Number of players
+    [SerializeField] private Image _playerNumbers;
     [SerializeField] private Sprite[] _playerNumbersSprites;
     private int _spriteIndex = 0;
 
     //End score
-    [SerializeField] private Sprite[] _endScoreSprites;
+    [SerializeField] private Image _rounds;
+    [SerializeField] private Sprite[] _roundsSprites;
     private int _endScore = 1;
 
     //Cursor control
@@ -73,12 +75,12 @@ public class MenuControlScript : MonoBehaviour
         if (_spriteIndex < _playerNumbersSprites.Length - 1)
         {
             _spriteIndex += 1;
-            _buttons[1].GetComponent<Image>().sprite = _playerNumbersSprites[_spriteIndex];
+            _playerNumbers.sprite = _playerNumbersSprites[_spriteIndex];
         }
         else
         {
             _spriteIndex = 0;
-            _buttons[1].GetComponent<Image>().sprite = _playerNumbersSprites[_spriteIndex];
+            _playerNumbers.sprite = _playerNumbersSprites[_spriteIndex];
         }
 
         I_GameplayManager.PlayerCount = _spriteIndex + 2;
@@ -86,15 +88,15 @@ public class MenuControlScript : MonoBehaviour
 
     public void AdjustEndScore()
     {
-        if (_endScore < 5)
+        if (_endScore < _roundsSprites.Length)
         {
             _endScore += 1;
-            _buttons[2].GetComponent<Image>().sprite = _endScoreSprites[_spriteIndex];
+            _rounds.sprite = _roundsSprites[_endScore - 1];
         }
         else
         {
-            _endScore = 0;
-            _buttons[2].GetComponent<Image>().sprite = _endScoreSprites[_spriteIndex];
+            _endScore = 1;
+            _rounds.sprite = _roundsSprites[_endScore - 1];
         }
 
         I_ScoreManager.EndScore = _endScore;

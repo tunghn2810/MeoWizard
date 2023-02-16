@@ -18,10 +18,10 @@ public class GameStateManager : MonoBehaviour
     [SerializeField] private GameState _gameState;
     public GameState CurrentGameState { get => _gameState; set => _gameState = value; }
 
-    [SerializeField] private GameState _nextGameState;
+    private GameState _nextGameState;
     public GameState NextGameState { get => _nextGameState; }
 
-    [SerializeField] private bool _enterGameplay = false;
+    private bool _enterGameplay = false;
     public bool EnterGameplay { get => _enterGameplay; set => _enterGameplay = value; }
 
     public static GameStateManager I_GameStateManager { get; set; }

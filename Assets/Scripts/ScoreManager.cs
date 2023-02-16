@@ -16,7 +16,7 @@ public class ScoreManager : MonoBehaviour
     private int _endScore = 1;
     public int EndScore { get => _endScore; set => _endScore = value; }
 
-    [SerializeField] private bool _isGameEnd = false;
+    private bool _isGameEnd = false;
     public bool IsGameEnd { get => _isGameEnd; }
 
     public static ScoreManager I_ScoreManager { get; set; }

@@ -6,9 +6,9 @@ using UnityEngine;
 public class Tile : MonoBehaviour
 {
     [SerializeField] private GameObject _bombPrefab;
-    [SerializeField] private bool _hasBomb = false;
+    private bool _hasBomb = false;
     public bool HasBomb { get => _hasBomb; set => _hasBomb = value; }
-    [SerializeField] private List<GameObject> players;
+    private List<GameObject> players = new List<GameObject>();
     public List<GameObject> Players { get => players; set => players = value; }
 
     private void OnCollisionEnter2D(Collision2D collision)
