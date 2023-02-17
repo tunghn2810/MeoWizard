@@ -13,6 +13,7 @@ TagManager:
   - CharSelectControl
   - SpawnPosition
   - Timer
+  - VictoryScript
   layers:
   - Default
   - TransparentFX

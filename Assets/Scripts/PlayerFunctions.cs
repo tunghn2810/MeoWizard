@@ -1,13 +1,9 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using System;
 
-using static ScoreManager;
 using static LevelManager;
-using UnityEditor.Animations;
 
 public class PlayerFunctions : MonoBehaviour
 {
@@ -93,6 +89,16 @@ public class PlayerFunctions : MonoBehaviour
         _obstacleLayer = LayerMask.GetMask("Obstacle", "SoftWall");
         _bombLayer = LayerMask.GetMask("Bomb");
         _directionCheckLayer = LayerMask.GetMask("Obstacle", "Bomb", "SoftWall");
+    }
+
+    private void OnEnable()
+    {
+        I_LevelManager.OnWin += Win;
+    }
+
+    private void OnDisable()
+    {
+        I_LevelManager.OnWin -= Win;
     }
 
     private void Update()
@@ -387,7 +393,6 @@ public class PlayerFunctions : MonoBehaviour
 
         if (_bombList.Count < _bombCap)
             SpawnBomb();
-            //OnPlantBomb?.Invoke(this, new OnPlantBombEventargs { bombPower = _power, player = this });
     }
 
     private void SpawnBomb()
@@ -444,6 +449,12 @@ public class PlayerFunctions : MonoBehaviour
         I_LevelManager.RemovePlayer(_playerNum);
     }
 
+    public void Win()
+    {
+        if (!_isDead)
+            _animator.SetBool("isWin", true);
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //Check when entering a new tile
@@ -475,7 +486,7 @@ public class PlayerFunctions : MonoBehaviour
         }
 
         //Check when getting hit by fire
-        if (!_isIFrame)
+        if (!_isIFrame && !_isDead)
         {
             if (collision.gameObject.tag == "Fire")
             {

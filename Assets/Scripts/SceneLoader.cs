@@ -1,11 +1,11 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 using static GameStateManager;
 using static GameplayManager;
+using static LevelManager;
 using static FadeCanvas;
 using static InputProcessor;
 
@@ -47,9 +47,14 @@ public class SceneLoader : MonoBehaviour
         {
             I_GameplayManager.OnSceneLoaded();
         }
-        else if (scene.name == "MainMenu" || scene.name == "Victory")
+        else if (scene.name == "MainMenu")
         {
             I_InputProcessor.OnSceneLoaded();
+        }
+        else if (scene.name == "Victory")
+        {
+            I_InputProcessor.OnSceneLoaded();
+            I_LevelManager.OnVictory();
         }
     }
 

@@ -49,8 +49,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameState: 1
-  _nextGameState: 0
-  _enterGameplay: 0
 --- !u!114 &5366170766612717617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,13 +121,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerPrefabs:
   - {fileID: 1800014734691825823, guid: 6931b11cade3bda45b957d09eb303190, type: 3}
-  - {fileID: 1800014734691825823, guid: 6931b11cade3bda45b957d09eb303190, type: 3}
-  - {fileID: 1800014734691825823, guid: 6931b11cade3bda45b957d09eb303190, type: 3}
-  - {fileID: 1800014734691825823, guid: 6931b11cade3bda45b957d09eb303190, type: 3}
-  _spawnPositions:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  _playerInputs: []
-  _playerCount: 0
+  - {fileID: 7883970503321699922, guid: 382fae7a038eae147aa7aeaf87162a38, type: 3}
+  - {fileID: 1483750751156368925, guid: 920c5a9c935f4dc40a2beebb1ed81a0c, type: 3}
+  - {fileID: 624858181713446834, guid: 8162056cac95fa74c94247fffc53f16b, type: 3}

@@ -1,11 +1,9 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-using static GameStateManager;
 using static GameplayManager;
+using static Alphabet;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -50,19 +48,18 @@ public class ScoreManager : MonoBehaviour
     {
         for (int i = 0; i < I_GameplayManager.PlayerCount; i++)
         {
-            _scoreSprites[i].sprite = Alphabet.I_Alphabet.SmallNumbers[_scoreboard[i]];
+            _scoreSprites[i].sprite = I_Alphabet.SmallNumbers[_scoreboard[i]];
         }
     }
 
     public void AddScore(int playerNum)
     {
         _scoreboard[playerNum - 1] += 1;
-        _scoreSprites[playerNum - 1].sprite = Alphabet.I_Alphabet.SmallNumbers[_scoreboard[playerNum - 1]];
+        _scoreSprites[playerNum - 1].sprite = I_Alphabet.SmallNumbers[_scoreboard[playerNum - 1]];
 
         if (_scoreboard[playerNum - 1] == _endScore)
         {
             _isGameEnd = true;
-            I_GameplayManager.DisablePlayers();
         }
     }
 

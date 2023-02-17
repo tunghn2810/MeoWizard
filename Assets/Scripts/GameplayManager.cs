@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,7 +9,7 @@ using UnityEngine.InputSystem;
 public class GameplayManager : MonoBehaviour
 {
     [SerializeField] private GameObject[] _playerPrefabs;
-    [SerializeField] private GameObject[] _spawnPositions;
+    private Vector3[] _spawnPositions = { new Vector3(-6, 5, 0), new Vector3(6, -5, 0), new Vector3(6, 5, 0), new Vector3(-6, -5, 0) };
     private string[] _controlSchemes = { "Keyboard_1", "Keyboard_2", "Controller_1", "Controller_2" };
     private List<InputDevice> _inputDevices = new List<InputDevice>();
     private int _controllerNum = 0;
@@ -64,7 +63,6 @@ public class GameplayManager : MonoBehaviour
 
     public void OnSceneLoaded()
     {
-        _spawnPositions = GameObject.FindGameObjectsWithTag("SpawnPosition");
         ControllerCheck();
         SpawnPlayers();
 
@@ -96,7 +94,7 @@ public class GameplayManager : MonoBehaviour
         for (int i = 0; i < _playerCount; i++)
         {
             PlayerInput newPlayer = PlayerInput.Instantiate(_playerPrefabs[i], controlScheme: _controlSchemes[i], pairWithDevice: _inputDevices[i]);
-            newPlayer.transform.position = _spawnPositions[i].transform.position;
+            newPlayer.transform.position = _spawnPositions[i];
             newPlayer.GetComponent<PlayerFunctions>().PlayerNum = i + 1;
             _playerInputs.Add(newPlayer);
             newPlayer.enabled = false;

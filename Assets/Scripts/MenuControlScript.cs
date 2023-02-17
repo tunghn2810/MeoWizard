@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -104,7 +102,14 @@ public class MenuControlScript : MonoBehaviour
 
     public void QuitGame()
     {
-        Application.Quit();
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
+        if (!Application.isEditor)
+        {
+            System.Diagnostics.Process.GetCurrentProcess().Kill();
+            //Application.Quit
+        }
     }
 
     public static void Replay()

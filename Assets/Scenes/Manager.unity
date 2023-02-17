@@ -352,20 +352,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6340528622821527464, guid: 84ecbbdedef4e7b40af780ce7bad61c6, type: 3}
-      propertyPath: m_NormalizedViewPortRect.x
-      value: 0.12382445
-      objectReference: {fileID: 0}
-    - target: {fileID: 6340528622821527464, guid: 84ecbbdedef4e7b40af780ce7bad61c6, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.05882353
-      objectReference: {fileID: 0}
-    - target: {fileID: 6340528622821527464, guid: 84ecbbdedef4e7b40af780ce7bad61c6, type: 3}
-      propertyPath: m_NormalizedViewPortRect.width
-      value: 0.7523511
+      value: 0.025691701
       objectReference: {fileID: 0}
     - target: {fileID: 6340528622821527464, guid: 84ecbbdedef4e7b40af780ce7bad61c6, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.88235295
+      value: 0.9486166
       objectReference: {fileID: 0}
     - target: {fileID: 6340528622821527467, guid: 84ecbbdedef4e7b40af780ce7bad61c6, type: 3}
       propertyPath: m_Name
@@ -504,7 +496,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5366170766612717631, guid: 5c0cb00056a8c3447aafb58c1b667623, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 561
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5366170766612717631, guid: 5c0cb00056a8c3447aafb58c1b667623, type: 3}
       propertyPath: m_LocalPosition.y

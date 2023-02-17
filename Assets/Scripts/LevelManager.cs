@@ -9,12 +9,17 @@ using static ScoreManager;
 
 public class LevelManager : MonoBehaviour
 {
-    private List<int> _alivePlayers = new List<int>();
+    [SerializeField] private List<int> _alivePlayers = new List<int>();
 
     private float _roundTimer = 180f;
     public float RoundTimer { get => _roundTimer; set => _roundTimer = value; }
     private const float MAX_ROUND_TIMER = 180f;
     private bool _isPlaying = false;
+
+    [SerializeField] private List<int> _dying = new List<int>();
+    private int _winner = 0;
+    private VictoryScript _victoryScript;
+    public event Action OnWin;
 
     public static LevelManager I_LevelManager { get; set; }
     private void Awake()
@@ -37,8 +42,6 @@ public class LevelManager : MonoBehaviour
 
         if (_isPlaying)
         {
-            RoundEndCheck();
-
             if (_roundTimer <= 0)
             {
                 _roundTimer = 0;
@@ -47,22 +50,28 @@ public class LevelManager : MonoBehaviour
 
             _roundTimer -= Time.deltaTime;
         }
+
+        RoundEndCheck();
     }
 
     public void RoundEndCheck()
     {
-        if (_alivePlayers.Count > 1)
-        {
+        if (!_isPlaying)
             return;
-        }
 
+        if (_dying.Count > 0)
+            return;
+
+        if (_alivePlayers.Count > 1)
+            return;
         else if (_alivePlayers.Count == 1)
         {
             I_ScoreManager.AddScore(_alivePlayers[0]);
+            _winner = _alivePlayers[0];
         }
         else if (_alivePlayers.Count < 1)
         {
-            //DRAW
+            //DRAW - No player gets score.
         }
 
         StartCoroutine(EndGamePause());
@@ -71,6 +80,12 @@ public class LevelManager : MonoBehaviour
     public void StartPause()
     {
         StartCoroutine(StartGamePause());
+    }
+
+    public void OnVictory()
+    {
+        _victoryScript = GameObject.FindGameObjectWithTag("VictoryScript").GetComponent<VictoryScript>();
+        _victoryScript.VictorySetup(_winner);
     }
 
     private IEnumerator StartGamePause()
@@ -84,13 +99,17 @@ public class LevelManager : MonoBehaviour
 
     private IEnumerator EndGamePause()
     {
-        yield return new WaitForSeconds(5f);
+        _isPlaying = false;
+        I_GameplayManager.DisablePlayers();
+        OnWin?.Invoke();
+
+        yield return new WaitForSeconds(3f);
+
         ResetPlayers();
         ResetTimer();
 
         if (I_ScoreManager.IsGameEnd)
         {
-            _isPlaying = false;
             I_GameStateManager.SetNextState(GameState.Victory);
             I_GameStateManager.EnterLoading();
         }
@@ -108,7 +127,14 @@ public class LevelManager : MonoBehaviour
 
     public void RemovePlayer(int playerNum)
     {
+        Debug.Log(playerNum);
         _alivePlayers.Remove(playerNum);
+        _dying.Add(playerNum);
+    }
+
+    public void AlreadyDead(int playerNum)
+    {
+        _dying.Remove(playerNum);
     }
 
     public void ResetPlayers()
