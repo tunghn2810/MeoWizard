@@ -107,8 +107,8 @@ public class MenuControlScript : MonoBehaviour
 #endif
         if (!Application.isEditor)
         {
-            System.Diagnostics.Process.GetCurrentProcess().Kill();
-            //Application.Quit
+            //System.Diagnostics.Process.GetCurrentProcess().Kill();
+            Application.Quit();
         }
     }
 

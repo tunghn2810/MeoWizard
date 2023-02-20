@@ -442,6 +442,9 @@ public class PlayerFunctions : MonoBehaviour
 
     public void Die()
     {
+        if (_isDead)
+            return;
+        
         _isIFrame = true;
         _animator.SetBool("isDead", true);
         _isDead = true;
