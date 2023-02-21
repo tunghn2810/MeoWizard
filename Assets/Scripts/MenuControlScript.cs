@@ -40,7 +40,7 @@ public class MenuControlScript : MonoBehaviour
     {
         if (isMoveDown)
         {
-            if (_cursorIndex < transform.childCount - 1)
+            if (_cursorIndex < transform.childCount - 2) // -1 for PC build to include Quit button
             {
                 _cursorIndex += 1;
                 _cursor.anchoredPosition = _buttons[_cursorIndex - 1].GetComponent<RectTransform>().anchoredPosition + _cursorOffset;
