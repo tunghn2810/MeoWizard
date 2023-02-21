@@ -1,6 +1,7 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+using static ScoreManager;
 
 public class Bomb : MonoBehaviour
 {
@@ -56,6 +57,9 @@ public class Bomb : MonoBehaviour
 
     private void Update()
     {
+        if (I_ScoreManager.IsGameEnd)
+            return;
+
         //Bomb trigger
         if (_isTriggered)
             ExplodeTrigger();

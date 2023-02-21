@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -48,7 +46,7 @@ public class InputProcessor : MonoBehaviour
             directionNum = 3;
         }
 
-        if (I_GameStateManager.CurrentGameState == GameState.MainMenu)
+        if (I_GameStateManager.CurrentGameState == GameState.MainMenu || I_GameStateManager.CurrentGameState == GameState.Victory)
         {
             if (context.phase == InputActionPhase.Performed)
             {
@@ -66,12 +64,15 @@ public class InputProcessor : MonoBehaviour
 
     public void AButton(InputAction.CallbackContext context, PlayerFunctions player)
     {
-        if (I_GameStateManager.CurrentGameState == GameState.MainMenu)
+        if (I_GameStateManager.CurrentGameState == GameState.MainMenu || I_GameStateManager.CurrentGameState == GameState.Victory)
         {
             if (context.phase == InputActionPhase.Performed)
                 _menuControl.Submit();
         }
         else if (I_GameStateManager.CurrentGameState == GameState.Gameplay)
-            player.PlantBomb();
+        {
+            if (context.phase == InputActionPhase.Performed)
+                player.PlantBomb();
+        }
     }
 }

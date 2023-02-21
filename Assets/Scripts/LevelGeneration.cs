@@ -1,15 +1,13 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.IO;
-using System;
-using System.Linq;
 
 public class LevelGeneration : MonoBehaviour
 {
     [SerializeField] private GameObject[] _softWallLines;
     [SerializeField] private List<GameObject> _softWallList = new List<GameObject>();
     [SerializeField] private List<GameObject> _softWallInactives = new List<GameObject>();
+    [SerializeField] private GameObject[] _p3Walls;
+    [SerializeField] private GameObject[] _p4Walls;
 
     [SerializeField] private GameObject[] _bombItems;
     private int _bombCount = 0;
@@ -25,6 +23,27 @@ public class LevelGeneration : MonoBehaviour
             for (int j = 0; j < _softWallLines[i].transform.childCount; j++)
             {
                 _softWallList.Add(_softWallLines[i].transform.GetChild(j).gameObject);
+            }
+        }
+
+
+        if (GameplayManager.I_GameplayManager.PlayerCount > 2)
+        {
+            for (int i = 0; i < _p3Walls.Length; i++)
+            {
+                _p3Walls[i].SetActive(false);
+                _softWallList.Remove(_p3Walls[i]);
+                _softWallInactives.Add(_p3Walls[i]);
+            }
+        }
+
+        if (GameplayManager.I_GameplayManager.PlayerCount > 3)
+        {
+            for (int i = 0; i < _p4Walls.Length; i++)
+            {
+                _p4Walls[i].SetActive(false);
+                _softWallList.Remove(_p4Walls[i]);
+                _softWallInactives.Add(_p4Walls[i]);
             }
         }
 

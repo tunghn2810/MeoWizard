@@ -1,11 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using System;
 
-using static ScoreManager;
 using static LevelManager;
 
 public class PlayerFunctions : MonoBehaviour
@@ -13,6 +10,10 @@ public class PlayerFunctions : MonoBehaviour
     //References
     private Rigidbody2D _rgbd;
     private Animator _animator;
+    private SpriteRenderer _spriteRenderer;
+
+    [SerializeField] private AnimatorOverrideController _onFireController;
+    [SerializeField] private GameObject _bombPrefab;
 
     //Layers
     private LayerMask _obstacleLayer;
@@ -21,7 +22,7 @@ public class PlayerFunctions : MonoBehaviour
 
     //Movement
     private Vector2 _moveDirection = Vector2.zero;
-    [SerializeField] private float _moveSpeed;
+    [SerializeField] private float _moveSpeed = 0.064f;
 
     //For checking obstacle and sliding when bumping into one
     [SerializeField] private Transform _raycastOrigin;
@@ -46,20 +47,25 @@ public class PlayerFunctions : MonoBehaviour
     private bool _isMovingLeft = false;
     private bool _isMovingRight = false;
 
-    //For bomb planting
-    public event EventHandler<OnPlantBombEventargs> OnPlantBomb;
-    public class OnPlantBombEventargs : EventArgs
-    {
-        public int bombPower;
-        public PlayerFunctions player;
-    }
+    //For bomb planting 
     private List<GameObject> _bombList = new List<GameObject>();
+    private Tile _currentTile;
+
+    //Iframes
+    private float _iFrameTimer = 0;
+    private const float IFRAME = 1f;
+    private bool _isIFrame = false;
+
+    //Afk timer
+    private float _afkTimer = 0;
+    private const float AFK_TIME = 3f;
+    private bool _isAfk = false;
 
     //Stats
     [SerializeField] private int _playerNum;
-    public int PlayerNum { get => _playerNum; }
+    public int PlayerNum { get => _playerNum; set => _playerNum = value; }
     
-    [SerializeField] private int _playerScore;
+    private int _playerScore;
     public int PlayerScore { get => _playerScore; set => _playerScore = value; }
 
     private int _power = 1;
@@ -77,11 +83,55 @@ public class PlayerFunctions : MonoBehaviour
     private void Start()
     {
         _rgbd = GetComponent<Rigidbody2D>();
-        _animator = GetComponent<Animator>();
+        _animator = GetComponentInChildren<Animator>();
+        _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 
         _obstacleLayer = LayerMask.GetMask("Obstacle", "SoftWall");
         _bombLayer = LayerMask.GetMask("Bomb");
         _directionCheckLayer = LayerMask.GetMask("Obstacle", "Bomb", "SoftWall");
+    }
+
+    private void OnEnable()
+    {
+        I_LevelManager.OnWin += Win;
+    }
+
+    private void OnDisable()
+    {
+        I_LevelManager.OnWin -= Win;
+    }
+
+    private void Update()
+    {
+        if (_isAfk && !_isDead)
+        {
+            if (_afkTimer >= AFK_TIME)
+            {
+                _animator.SetBool("isAfk", _isAfk);
+            }
+
+            _afkTimer += Time.deltaTime;
+        }
+        else
+        {
+            _afkTimer = 0;
+            _animator.SetBool("isAfk", _isAfk);
+        }
+
+        if (_isIFrame && !_isDead)
+        {
+            if (_iFrameTimer >= IFRAME)
+            {
+                _isIFrame = false;
+                _iFrameTimer = 0;
+            }
+
+            _spriteRenderer.enabled = !_spriteRenderer.enabled;
+
+            _iFrameTimer += Time.deltaTime;
+        }
+        else
+            _spriteRenderer.enabled = true;
     }
 
     private void FixedUpdate()
@@ -94,6 +144,12 @@ public class PlayerFunctions : MonoBehaviour
             _currentInput = _inputs[0];
         else
             _currentInput = -1; //-1 = No input
+
+
+        if (_currentInput == -1)
+            _isAfk = true;
+        else
+            _isAfk = false;
 
         //Process input
         if (_currentInput == 0)
@@ -336,7 +392,20 @@ public class PlayerFunctions : MonoBehaviour
             return;
 
         if (_bombList.Count < _bombCap)
-            OnPlantBomb?.Invoke(this, new OnPlantBombEventargs { bombPower = _power, player = this });
+            SpawnBomb();
+    }
+
+    private void SpawnBomb()
+    {
+        if (!_currentTile.HasBomb)
+        {
+            Vector3 bombPosition = new Vector3(_currentTile.transform.position.x, _currentTile.transform.position.y, 0);
+            GameObject newBomb = Instantiate(_bombPrefab, bombPosition, Quaternion.identity);
+            newBomb.GetComponent<Bomb>().Power = _power;
+            newBomb.GetComponent<Bomb>().Player = this;
+            newBomb.GetComponent<Bomb>().IsOneShot = _isOnFire;
+            AddBomb(newBomb);
+        }
     }
 
     public void AddBomb(GameObject bomb)
@@ -363,8 +432,9 @@ public class PlayerFunctions : MonoBehaviour
     
     public void OnFire()
     {
+        _isIFrame = true;
         _isOnFire = true;
-        //On fire anim: ON
+        _animator.runtimeAnimatorController = _onFireController;
         Invoke("Die", 10.0f);
         _power = MAX_POWER;
         _moveSpeed *= 1.2f;
@@ -372,12 +442,20 @@ public class PlayerFunctions : MonoBehaviour
 
     public void Die()
     {
+        if (_isDead)
+            return;
+        
+        _isIFrame = true;
         _animator.SetBool("isDead", true);
         _isDead = true;
 
         I_LevelManager.RemovePlayer(_playerNum);
+    }
 
-        I_LevelManager.RoundEndCheck();
+    public void Win()
+    {
+        if (!_isDead)
+            _animator.SetBool("isWin", true);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -385,6 +463,8 @@ public class PlayerFunctions : MonoBehaviour
         //Check when entering a new tile
         if (collision.gameObject.layer == LayerMask.NameToLayer("Grass"))
         {
+            _currentTile = collision.gameObject.GetComponent<Tile>();
+
             //Check if currently moving horizontally or vertically
             if (_moveDirection.x == 0)
                 _currentlyHorz = false;
@@ -409,16 +489,19 @@ public class PlayerFunctions : MonoBehaviour
         }
 
         //Check when getting hit by fire
-        if (collision.gameObject.tag == "Fire")
+        if (!_isIFrame && !_isDead)
         {
-            if (_isOnFire)
+            if (collision.gameObject.tag == "Fire")
+            {
+                if (_isOnFire)
+                    Die();
+                else
+                    OnFire();
+            }
+            else if (collision.gameObject.tag == "FireOneShot")
+            {
                 Die();
-            else
-                OnFire();
-        }
-        else if (collision.gameObject.tag == "FireOneShot")
-        {
-            Die();
+            }
         }
     }
 }

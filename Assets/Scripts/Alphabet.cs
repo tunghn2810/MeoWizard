@@ -10,12 +10,12 @@ public class Alphabet : MonoBehaviour
     [SerializeField] private Sprite[] _smallNumbers;
     public Sprite[] SmallNumbers { get => _smallNumbers; }
 
-    public static Alphabet Instance { get; set; }
+    public static Alphabet I_Alphabet { get; set; }
     private void Awake()
     {
-        if (Instance == null)
+        if (I_Alphabet == null)
         {
-            Instance = this;
+            I_Alphabet = this;
             DontDestroyOnLoad(gameObject);
         }
         else

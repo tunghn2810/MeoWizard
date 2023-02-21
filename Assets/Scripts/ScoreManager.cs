@@ -1,11 +1,9 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-using static GameStateManager;
 using static GameplayManager;
+using static Alphabet;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -13,8 +11,11 @@ public class ScoreManager : MonoBehaviour
     private GameObject _scoreboardPlayers;
     [SerializeField] private Image[] _scoreSprites = new Image[4];
 
-    private int _endScore = 3;
+    private int _endScore = 1;
     public int EndScore { get => _endScore; set => _endScore = value; }
+
+    private bool _isGameEnd = false;
+    public bool IsGameEnd { get => _isGameEnd; }
 
     public static ScoreManager I_ScoreManager { get; set; }
     private void Awake()
@@ -43,30 +44,23 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        if (I_GameStateManager.CurrentGameState != GameState.Gameplay)
-            return;
-
-        if (_scoreboard.Contains(_endScore))
-        {
-            Debug.Log("Player " + (_scoreboard.IndexOf(_endScore) + 1).ToString() + " wins!");
-            //ResetScores();
-        }
-    }
-
     public void AdjustScoreSprites()
     {
         for (int i = 0; i < I_GameplayManager.PlayerCount; i++)
         {
-            _scoreSprites[i].sprite = Alphabet.Instance.SmallNumbers[_scoreboard[i]];
+            _scoreSprites[i].sprite = I_Alphabet.SmallNumbers[_scoreboard[i]];
         }
     }
 
     public void AddScore(int playerNum)
     {
         _scoreboard[playerNum - 1] += 1;
-        _scoreSprites[playerNum - 1].sprite = Alphabet.Instance.SmallNumbers[_scoreboard[playerNum - 1]];
+        _scoreSprites[playerNum - 1].sprite = I_Alphabet.SmallNumbers[_scoreboard[playerNum - 1]];
+
+        if (_scoreboard[playerNum - 1] == _endScore)
+        {
+            _isGameEnd = true;
+        }
     }
 
     public void JoinGame(int playerNum)
@@ -77,5 +71,6 @@ public class ScoreManager : MonoBehaviour
     public void ResetScores()
     {
         _scoreboard.Clear();
+        _isGameEnd = false;
     }
 }

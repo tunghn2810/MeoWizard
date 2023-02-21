@@ -10,6 +10,10 @@ TagManager:
   - MenuControl
   - FireOneShot
   - ScoreboardPlayers
+  - CharSelectControl
+  - SpawnPosition
+  - Timer
+  - VictoryScript
   layers:
   - Default
   - TransparentFX

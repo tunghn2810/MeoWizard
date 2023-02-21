@@ -11,18 +11,13 @@ public class Item : MonoBehaviour
     private bool _isDestroyed = false;
 
     //Item types: 0 = Bomb, 1 = Fire
-    private int _itemType;
+    [SerializeField] private int _itemType;
 
     private void Awake()
     {
         _anim = GetComponent<Animator>();
         _type = transform.GetChild(0).gameObject;
         _ring = transform.GetChild(1).gameObject;
-
-        if (_type.GetComponent<SpriteRenderer>().sprite.name == "Item_Bomb")
-            _itemType = 0;
-        else if (_type.GetComponent<SpriteRenderer>().sprite.name == "Item_Fire")
-            _itemType = 1;
 
         _type.GetComponent<SpriteRenderer>().enabled = false;
         _ring.GetComponent<SpriteRenderer>().enabled = false;

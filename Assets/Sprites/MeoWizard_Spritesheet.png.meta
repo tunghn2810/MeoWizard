@@ -1,0 +1,2822 @@
+fileFormatVersion: 2
+guid: 240810fb321cb014aa2efc3ed9e627fb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1738
+        width: 16
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3809524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0451327159dc44cb3fae14e353dc84
+      internalID: 864546090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1738
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5717c12943453ce489edacdce6740a79
+      internalID: -964522197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1704
+        width: 16
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3809524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55de885594662c544bf4a311cc099e00
+      internalID: 1032174672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1704
+        width: 16
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3809524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017f97393e409c24c84ed4d11d8efa79
+      internalID: -1801474418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1670
+        width: 16
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3809524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2136726b4b5eb14498c826000ae309ff
+      internalID: 1996039203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1670
+        width: 16
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3478261}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3b2b52151de5541b4d3dfc8e523e4b
+      internalID: -459738062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1636
+        width: 16
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3809524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08da49112252468479f01319cb546222
+      internalID: 1997583349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1636
+        width: 16
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3478261}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ba83af2e035944591045cba4a3ad2b
+      internalID: 470122913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1602
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47058824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76728627b459e0a40a170f4d86cd29c1
+      internalID: 249671992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1602
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47058824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccdb66c8cd857c94ab24b8c3e1f93a1a
+      internalID: 271531500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1602
+        width: 16
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5, y: 0.53333336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a80a4463a4f01142a4c385a45eacd12
+      internalID: 1135305025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1602
+        width: 16
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5, y: 0.61538464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b46cc3d76b0ec649a0bf4adc5163c58
+      internalID: 1832358425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1602
+        width: 14
+        height: 11
+      alignment: 9
+      pivot: {x: 0.5, y: 0.72727275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b8abf191f4bcc46ac1e3ada45c5986
+      internalID: -864549230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1602
+        width: 14
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4e3ad5315e8ea9448f784f57d7c4c4f
+      internalID: -906835420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1568
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cba2112734ad9a40a42fbe57ae8ba25
+      internalID: -465487275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1568
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47058824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534ed4d35474ab84783589594a2487ee
+      internalID: -710807005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1534
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e13979b3d34a3849806af0a50232f84
+      internalID: -2000736824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1534
+        width: 16
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 0.44444445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7930e076dbab5d4abe3af146001a588
+      internalID: 1076618062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1500
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 279f576ab7b68864ca4e9c790a19ded3
+      internalID: -1566613059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1500
+        width: 16
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42105263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb13a7d7aa388814ea7bc4e664f658df
+      internalID: 1522075433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1466
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73cdbce17b558f47a47c85932c4ebec
+      internalID: 229074880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1466
+        width: 16
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42105263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d95941434a1693499cfbb725927ccbe
+      internalID: -1010226365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1432
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aaffc70dd7f7284f82559becb7fef15
+      internalID: 1174243087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1432
+        width: 16
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42105263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e77968f4463a0c641a12fb4c6cc3845f
+      internalID: -123685319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1432
+        width: 16
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 0.44444445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e42c6fe714ef04aa453d13dcffe1f6
+      internalID: -1750815733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1432
+        width: 16
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42105263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f49a676daf5a3724c94e647d06eab4fd
+      internalID: -636415227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1398
+        width: 16
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3809524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d075461e4e73b748bc4df3a5233263d
+      internalID: 2083869379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1398
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee40011826dd9b149933f7bbf205c993
+      internalID: 1207437814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1364
+        width: 16
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3809524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c58f4e54b5690354ea992871bcec4ea5
+      internalID: 2111812394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1364
+        width: 16
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3809524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 618bb513efff20b49bb63670d4102bfc
+      internalID: -1431545144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1330
+        width: 16
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3809524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb1da230bf6155439da82e106326f4f
+      internalID: -2016309019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1330
+        width: 16
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3478261}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d0da08bd5bb194bac5a697003d1cc6
+      internalID: 1450210674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1296
+        width: 16
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3809524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f68db3b31fde645a78c7ecf703781a
+      internalID: -1657950728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1296
+        width: 16
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3478261}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4418f22d9f181df458585b8ee0b7bb57
+      internalID: 896687922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1262
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47058824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5e683e87cba844dadd3db0d735662c
+      internalID: 1393257435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1262
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47058824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d1af12503b08a469951f06a2b43b1a
+      internalID: 1180433259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1262
+        width: 16
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5, y: 0.53333336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d51b49b88fd294fb17bc31fae977bb
+      internalID: -719651297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1262
+        width: 16
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5, y: 0.61538464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c17af2cff45d1a458a6c31948338945
+      internalID: 2057621126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1262
+        width: 14
+        height: 11
+      alignment: 9
+      pivot: {x: 0.5, y: 0.72727275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9eaefb2a394814d91e393b7a35c9ef
+      internalID: 1410381637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1262
+        width: 14
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53fedfc3ff805ad45b95432f5e9477e5
+      internalID: -5492094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1228
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a552c021a0baee4bacb6177ee3b25d6
+      internalID: -952553809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1228
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47058824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c125cd1efe36e1f4a88d630eaf3cb8e1
+      internalID: -1759614285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1194
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa646ecdcc50034fae39bd79b1cdba0
+      internalID: -1503371065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1194
+        width: 16
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 0.44444445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a94d5813b566d14f9a0b197de81709a
+      internalID: -1023922596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e66dafa60b20e419fc7e8bf8e998cc
+      internalID: 131728065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1160
+        width: 16
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5625, y: 0.42105263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa7215216bfa4df4682fce0a66c4cdcd
+      internalID: -536324100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1126
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3026a8c78687cdd449c2f67654a86084
+      internalID: 844544878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1126
+        width: 16
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42105263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5175b1f3c6c5cc47b609f47e1233f24
+      internalID: -1241825220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1092
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95304ab18ed3d554190133aace892e14
+      internalID: -2096390956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1092
+        width: 16
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42105263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15dccdbec89ac2241a6c470b106bd637
+      internalID: 1211732941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1092
+        width: 16
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 0.44444445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba9edd946cc7f8a46815b1331a25d86e
+      internalID: -292928618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1092
+        width: 16
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42105263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 342ad1e64f43d014286c86d405107a09
+      internalID: 1020936865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1058
+        width: 16
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3809524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd892c4b50563a459d7add9c5b8da2a
+      internalID: -927224874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1058
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b877292a338fc45b3a7acc3dfe3809
+      internalID: -1679312754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1024
+        width: 16
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3809524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f00be687c3de349b7bdd7558619bc4
+      internalID: 714155848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1024
+        width: 16
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3809524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0288ea42ea8dc18479e49d5792c0c00d
+      internalID: -1375116540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 990
+        width: 16
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3809524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfb836599aab6974ea9633d778da6c45
+      internalID: 1346771191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 990
+        width: 16
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3478261}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 165540e915fe66b44a068270aa299006
+      internalID: -1019283678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 956
+        width: 16
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3809524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 966a3ee8954feef41847366eb4cfb324
+      internalID: 758531122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 956
+        width: 16
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3478261}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 202a75fa47f71c442936e43cab0f87ed
+      internalID: -165465714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 922
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47058824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e443064abe972c5459fc57b43615c97b
+      internalID: -657616865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 922
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47058824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3dfb0993540f741b2425986b2e3e03
+      internalID: 1261123820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 922
+        width: 16
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5625, y: 0.53333336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbcbfcc20c0b5c4eaef66faba0eeb48
+      internalID: 201495089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 922
+        width: 16
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5, y: 0.61538464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc188a58ed6b2984799b005b35d14b65
+      internalID: -726200193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 922
+        width: 14
+        height: 11
+      alignment: 9
+      pivot: {x: 0.5, y: 0.72727275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df30369ca4d63484a91e16a691a9f3da
+      internalID: -868444272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 922
+        width: 14
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8449d74bb68394a8170d46ebe09901
+      internalID: -1365062409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 888
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e52e2cfd6e9642d4a87c812de1ba8f9b
+      internalID: -853830084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 888
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47058824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a168e8559cae2b40be83d4e808f2715
+      internalID: -233055014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 854
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7cb4c875e8b9bc4dbbbfe79c4392214
+      internalID: 1973357195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 854
+        width: 16
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 0.44444445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4fd93845dc5164da2b71a0c87af162
+      internalID: -140654123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_73
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 820
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b2ca9bc7ca21d4cb1eaf35ebf92d9a
+      internalID: 812515935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_74
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 820
+        width: 16
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42105263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089e319b0554c1b4caf9bbf9a8e66fb7
+      internalID: -1859918202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_75
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 786
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3112e12fa99f199488f0bf087e73f8c7
+      internalID: -1859206806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_76
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 786
+        width: 16
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42105263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a36b83f8039814f4ca937768026ddc8c
+      internalID: 999855070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_77
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 752
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a987a6295d95fa942a2434737fdb160f
+      internalID: -1726516398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_78
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 752
+        width: 16
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42105263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f544d5ea554e6964782c587e012d54c4
+      internalID: 1745826725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_79
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 752
+        width: 16
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 0.44444445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c544bd59d6df8e2499425fb3afe9c107
+      internalID: 606151742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_80
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 752
+        width: 16
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42105263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0964c99a27268be40a09568de7efbc5d
+      internalID: -1944543956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_81
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 718
+        width: 16
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3809524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b346c252162b4045aa0c3f7d6c2267e
+      internalID: -1365265880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_82
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 718
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79529959c827c424493b2d97b9e6c780
+      internalID: 1056906936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_83
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 684
+        width: 16
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3809524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4a50698a0270e4d8d23c76f86de433
+      internalID: -515501305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_84
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 684
+        width: 16
+        height: 23
+      alignment: 9
+      pivot: {x: 0.4375, y: 0.3478261}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b386eded8f9a44ab6f0cbe9f640b91
+      internalID: 1183186047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_85
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 650
+        width: 16
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3809524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f547725128655404798a3c16cc05e7ab
+      internalID: 1046219726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_86
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 650
+        width: 16
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3478261}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf6e75c8fede8024ca6022f7ac01fd3e
+      internalID: -1393065018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_87
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 616
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47058824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7a52d8f10debe40ad7c8ce05074105
+      internalID: 109257400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_88
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 616
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47058824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb8815324bf98042a90067f02eca476
+      internalID: 1595171114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_89
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 616
+        width: 16
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5, y: 0.53333336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 648aca30d1b52d54fa55de23e5a70191
+      internalID: -1378319066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_90
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 616
+        width: 16
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5, y: 0.61538464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e133cc0fc1e9ce498ba7270e8a61c10
+      internalID: -2137481063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_92
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 582
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb3500ce42baa6f40bd74b4c3b2f7c4a
+      internalID: 1833668715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_93
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 582
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47058824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd88d4179f69bf48857bc99fe3e3a4f
+      internalID: -1366578430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_94
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 548
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00b68e653838d6841a462e095880c8c7
+      internalID: -1670046133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_95
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 548
+        width: 16
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 0.44444445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c31bee1f80bfd4887478fdd62ef25a
+      internalID: -2020626133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_96
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 514
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c85f1671193144ca41098cbb217460
+      internalID: -520049228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_97
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 514
+        width: 16
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5625, y: 0.42105263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc4063b6513eea4dbca18396b9ea69e
+      internalID: 805654333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_98
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 480
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9adb78d7f76101d4c84fed3b13495fcc
+      internalID: 657387047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_99
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 480
+        width: 16
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42105263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64fca306d41d5b74a838aa1a79b29b82
+      internalID: -2073923298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_100
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 446
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cecb69dfa7011ca46bf1b5b3abec2af8
+      internalID: -876808286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_101
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 446
+        width: 16
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42105263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35bea2c0d5fa11047b36d17c4b7ecbdc
+      internalID: 648470373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_102
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 446
+        width: 16
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 0.44444445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 596ce318b16d30647aadb78d879bb8b1
+      internalID: 2130439193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_103
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 446
+        width: 16
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42105263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b95535deffa514d8b4f4091985fdd3
+      internalID: 1840835003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_104
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 408
+        width: 19
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d58d14a0f488fcd4cadf7d45c98f0859
+      internalID: 844379830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_105
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 408
+        width: 20
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3809524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e4ccd2f9f08aa348a40b46edeb3732f
+      internalID: 2100666940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_106
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 412
+        width: 26
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3809524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb94875dc86c8344bf0aaea155e038a
+      internalID: -533261795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_108
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 413
+        width: 26
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12dd29dae2b68bd4abdb7368ceaeb665
+      internalID: 1355762709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_112
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 415
+        width: 26
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 0.44444445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e9f28e3f9ed40a4fba33f42ce07af57
+      internalID: 1310010755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_114
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 419
+        width: 25
+        height: 14
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6430901d5e4744692f1caa3986afeb
+      internalID: -514703433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_121
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 408
+        width: 7
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8888889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb22cc2afaca0f447b1b02ad89da1ca7
+      internalID: -1516014654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_122
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 408
+        width: 11
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8888889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06003da7d1cf86e43ab2d5770e379544
+      internalID: 1599582546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_123
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 382
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a8672ebf3611d4193f5e1a448a555f
+      internalID: -1396628771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_124
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 382
+        width: 14
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5, y: 0.53333336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73edbcd0f5a9cb04abac61f97b3e0af5
+      internalID: 1916647185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_125
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 382
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151a4777aec9f0746a8d482de6008342
+      internalID: -51995737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_126
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 357
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baed5efd4087ed14fa0db64c17aef692
+      internalID: 738579313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_127
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 323
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef5fb41405d29e448d75acd13548271
+      internalID: 1704346955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_128
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 289
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c068b55eb66579144a52e246f2012ac8
+      internalID: 2107692876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_129
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 254
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3385d3c70660a564fa27d75a51fdf835
+      internalID: 567877057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_130
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32260ae9d4c30484da1f3aba5971b77d
+      internalID: 1224461686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_131
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 186
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea2b8c526b0e214bbdf450ce3608436
+      internalID: 1905329304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_132
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be56b92d01d88f54386774d0b64005a8
+      internalID: -1795083301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_133
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 118
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb4ce939e8068b43988dad949a509d9
+      internalID: -762411786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_134
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 84
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc34fbf6424510649bc9a309e9a66f82
+      internalID: -2060363196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_135
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 50
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95dea0def06ac714ba79d6bb08c5e571
+      internalID: -611289579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MeoWizard_Spritesheet_136
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001e5fd6a512e0348b15507e2e20f5f1
+      internalID: 2052554176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      MeoWizard_Spritesheet_63: 1261123820
+      MeoWizard_Spritesheet_23: 1174243087
+      MeoWizard_Spritesheet_8: 249671992
+      MeoWizard_Spritesheet_69: -853830084
+      MeoWizard_Spritesheet_0: 864546090
+      MeoWizard_Spritesheet_38: 2057621126
+      MeoWizard_Spritesheet_56: 714155848
+      MeoWizard_Spritesheet_45: -1023922596
+      MeoWizard_Spritesheet_76: 999855070
+      MeoWizard_Spritesheet_12: -864549230
+      MeoWizard_Spritesheet_42: -952553809
+      MeoWizard_Spritesheet_81: -1365265880
+      MeoWizard_Spritesheet_67: -1365062409
+      MeoWizard_Spritesheet_93: -1366578430
+      MeoWizard_Spritesheet_132: -1795083301
+      MeoWizard_Spritesheet_70: -233055014
+      MeoWizard_Spritesheet_58: 1346771191
+      MeoWizard_Spritesheet_33: -1657950728
+      MeoWizard_Spritesheet_61: -165465714
+      MeoWizard_Spritesheet_72: -140654123
+      MeoWizard_Spritesheet_51: 1211732941
+      MeoWizard_Spritesheet_66: -868444272
+      MeoWizard_Spritesheet_109: -866496561
+      MeoWizard_Spritesheet_86: -1393065018
+      MeoWizard_Spritesheet_21: 229074880
+      MeoWizard_Spritesheet_22: -1010226365
+      MeoWizard_Spritesheet_41: -369474606
+      MeoWizard_Spritesheet_85: 1046219726
+      MeoWizard_Spritesheet_55: -1679312754
+      MeoWizard_Spritesheet_30: -1431545144
+      MeoWizard_Spritesheet_110: -1752193528
+      MeoWizard_Spritesheet_98: 657387047
+      MeoWizard_Spritesheet_47: -536324100
+      MeoWizard_Spritesheet_99: -2073923298
+      MeoWizard_Spritesheet_118: -1622865836
+      MeoWizard_Spritesheet_123: -1396628771
+      MeoWizard_Spritesheet_107: -893398820
+      MeoWizard_Spritesheet_120: -2034247356
+      MeoWizard_Spritesheet_19: -1566613059
+      MeoWizard_Spritesheet_14: 1926965242
+      MeoWizard_Spritesheet_90: -2137481063
+      MeoWizard_Spritesheet_102: 2130439193
+      MeoWizard_Spritesheet_46: 131728065
+      MeoWizard_Spritesheet_68: -1695058574
+      MeoWizard_Spritesheet_11: 1832358425
+      MeoWizard_Spritesheet_133: -762411786
+      MeoWizard_Spritesheet_116: -1406742839
+      MeoWizard_Spritesheet_2: 1032174672
+      MeoWizard_Spritesheet_64: 201495089
+      MeoWizard_Spritesheet_83: -515501305
+      MeoWizard_Spritesheet_111: -1103809546
+      MeoWizard_Spritesheet_60: 758531122
+      MeoWizard_Spritesheet_105: 2100666940
+      MeoWizard_Spritesheet_1: -964522197
+      MeoWizard_Spritesheet_44: -1503371065
+      MeoWizard_Spritesheet_74: -1859918202
+      MeoWizard_Spritesheet_131: 1905329304
+      MeoWizard_Spritesheet_37: -719651297
+      MeoWizard_Spritesheet_10: 1135305025
+      MeoWizard_Spritesheet_95: -2020626133
+      MeoWizard_Spritesheet_103: 1840835003
+      MeoWizard_Spritesheet_20: 1522075433
+      MeoWizard_Spritesheet_15: -465487275
+      MeoWizard_Spritesheet_75: -1859206806
+      MeoWizard_Spritesheet_59: -1019283678
+      MeoWizard_Spritesheet_77: -1726516398
+      MeoWizard_Spritesheet_34: 896687922
+      MeoWizard_Spritesheet_117: -603070518
+      MeoWizard_Spritesheet_29: 2111812394
+      MeoWizard_Spritesheet_73: 812515935
+      MeoWizard_Spritesheet_124: 1916647185
+      MeoWizard_Spritesheet_88: 1595171114
+      MeoWizard_Spritesheet_53: 1020936865
+      MeoWizard_Spritesheet_43: -1759614285
+      MeoWizard_Spritesheet_127: 1704346955
+      MeoWizard_Spritesheet_80: -1944543956
+      MeoWizard_Spritesheet_136: 2052554176
+      MeoWizard_Spritesheet_130: 1224461686
+      MeoWizard_Spritesheet_122: 1599582546
+      MeoWizard_Spritesheet_87: 109257400
+      MeoWizard_Spritesheet_125: -51995737
+      MeoWizard_Spritesheet_5: -459738062
+      MeoWizard_Spritesheet_52: -292928618
+      MeoWizard_Spritesheet_97: 805654333
+      MeoWizard_Spritesheet_101: 648470373
+      MeoWizard_Spritesheet_84: 1183186047
+      MeoWizard_Spritesheet_121: -1516014654
+      MeoWizard_Spritesheet_7: 470122913
+      MeoWizard_Spritesheet_28: 1207437814
+      MeoWizard_Spritesheet_25: -1750815733
+      MeoWizard_Spritesheet_18: 1076618062
+      MeoWizard_Spritesheet_129: 567877057
+      MeoWizard_Spritesheet_94: -1670046133
+      MeoWizard_Spritesheet_6: 1997583349
+      MeoWizard_Spritesheet_27: 2083869379
+      MeoWizard_Spritesheet_78: 1745826725
+      MeoWizard_Spritesheet_4: 1996039203
+      MeoWizard_Spritesheet_114: -514703433
+      MeoWizard_Spritesheet_135: -611289579
+      MeoWizard_Spritesheet_126: 738579313
+      MeoWizard_Spritesheet_96: -520049228
+      MeoWizard_Spritesheet_104: 844379830
+      MeoWizard_Spritesheet_65: -726200193
+      MeoWizard_Spritesheet_9: 271531500
+      MeoWizard_Spritesheet_134: -2060363196
+      MeoWizard_Spritesheet_92: 1833668715
+      MeoWizard_Spritesheet_100: -876808286
+      MeoWizard_Spritesheet_91: -278859613
+      MeoWizard_Spritesheet_79: 606151742
+      MeoWizard_Spritesheet_24: -123685319
+      MeoWizard_Spritesheet_119: 444951896
+      MeoWizard_Spritesheet_82: 1056906936
+      MeoWizard_Spritesheet_115: 570322511
+      MeoWizard_Spritesheet_57: -1375116540
+      MeoWizard_Spritesheet_32: 1450210674
+      MeoWizard_Spritesheet_35: 1393257435
+      MeoWizard_Spritesheet_36: 1180433259
+      MeoWizard_Spritesheet_112: 1310010755
+      MeoWizard_Spritesheet_40: -5492094
+      MeoWizard_Spritesheet_3: -1801474418
+      MeoWizard_Spritesheet_113: 10271261
+      MeoWizard_Spritesheet_50: -2096390956
+      MeoWizard_Spritesheet_26: -636415227
+      MeoWizard_Spritesheet_62: -657616865
+      MeoWizard_Spritesheet_108: 1355762709
+      MeoWizard_Spritesheet_71: 1973357195
+      MeoWizard_Spritesheet_49: -1241825220
+      MeoWizard_Spritesheet_39: 1410381637
+      MeoWizard_Spritesheet_31: -2016309019
+      MeoWizard_Spritesheet_128: 2107692876
+      MeoWizard_Spritesheet_13: -906835420
+      MeoWizard_Spritesheet_89: -1378319066
+      MeoWizard_Spritesheet_17: -2000736824
+      MeoWizard_Spritesheet_16: -710807005
+      MeoWizard_Spritesheet_106: -533261795
+      MeoWizard_Spritesheet_54: -927224874
+      MeoWizard_Spritesheet_48: 844544878
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

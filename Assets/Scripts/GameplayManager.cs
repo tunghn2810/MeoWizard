@@ -1,15 +1,22 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 using static GameStateManager;
 using static ScoreManager;
 using static LevelManager;
+using UnityEngine.InputSystem;
 
 public class GameplayManager : MonoBehaviour
 {
-    [SerializeField] private GameObject[] _players;
-    [SerializeField] private int _playerCount;
+    [SerializeField] private GameObject[] _playerPrefabs;
+    private Vector3[] _spawnPositions = { new Vector3(-6, 5, 0), new Vector3(6, -5, 0), new Vector3(6, 5, 0), new Vector3(-6, -5, 0) };
+    private string[] _controlSchemes = { "Keyboard_1", "Keyboard_2", "Controller_1", "Controller_2" };
+    private List<InputDevice> _inputDevices = new List<InputDevice>();
+    private int _controllerNum = 0;
+
+    private List<PlayerInput> _playerInputs = new List<PlayerInput>();
+
+    private int _playerCount = 2;
     public int PlayerCount { get => _playerCount; set => _playerCount = value; }
     
     public static GameplayManager I_GameplayManager { get; set; }
@@ -26,13 +33,38 @@ public class GameplayManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        _inputDevices.Add(Keyboard.current);
+        _inputDevices.Add(Keyboard.current);
+    }
+
+    public void ControllerCheck()
+    {
+        if (_controllerNum < Gamepad.all.Count)
+        {
+            int numConnected = Gamepad.all.Count - _controllerNum;
+            for (int i = 0; i < numConnected; i++)
+            {
+                _inputDevices.Add(Gamepad.all[i]);
+            }
+            _controllerNum += numConnected;
+        }
+        else if (_controllerNum > Gamepad.all.Count)
+        {
+            int numDisconnected = _controllerNum - Gamepad.all.Count;
+            for (int i = 0; i < numDisconnected; i++)
+            {
+                _inputDevices.Remove(Gamepad.all[i]);
+            }
+            _controllerNum -= numDisconnected;
+        }
+    }
+
     public void OnSceneLoaded()
     {
-        _players = GameObject.FindGameObjectsWithTag("Player");
-        for (int i = _playerCount; i < _players.Length; i++)
-        {
-            _players[i].SetActive(false);
-        }
+        ControllerCheck();
+        SpawnPlayers();
 
         I_ScoreManager.OnSceneLoaded();
 
@@ -51,5 +83,38 @@ public class GameplayManager : MonoBehaviour
         }
 
         I_ScoreManager.AdjustScoreSprites();
+
+        I_LevelManager.StartPause();
+    }
+
+    private void SpawnPlayers()
+    {
+        _playerInputs.Clear();
+
+        for (int i = 0; i < _playerCount; i++)
+        {
+            PlayerInput newPlayer = PlayerInput.Instantiate(_playerPrefabs[i], controlScheme: _controlSchemes[i], pairWithDevice: _inputDevices[i]);
+            newPlayer.transform.position = _spawnPositions[i];
+            newPlayer.GetComponent<PlayerFunctions>().PlayerNum = i + 1;
+            _playerInputs.Add(newPlayer);
+            newPlayer.enabled = false;
+        }
+    }
+
+    public void EnablePlayers()
+    {
+        for (int i = 0; i < _playerInputs.Count; i++)
+        {
+            _playerInputs[i].enabled = true;
+            _playerInputs[i].SwitchCurrentControlScheme(_controlSchemes[i], _inputDevices[i]);
+        }
+    }
+
+    public void DisablePlayers()
+    {
+        for (int i = 0; i < _playerInputs.Count; i++)
+        {
+            _playerInputs[i].enabled = false;
+        }
     }
 }

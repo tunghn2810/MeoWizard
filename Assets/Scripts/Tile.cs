@@ -6,22 +6,10 @@ using UnityEngine;
 public class Tile : MonoBehaviour
 {
     [SerializeField] private GameObject _bombPrefab;
-    [SerializeField] private bool _hasBomb = false;
-    [SerializeField] private List<GameObject> players;
+    private bool _hasBomb = false;
+    public bool HasBomb { get => _hasBomb; set => _hasBomb = value; }
+    private List<GameObject> players = new List<GameObject>();
     public List<GameObject> Players { get => players; set => players = value; }
-
-    private void SpawnBomb(object sender, PlayerFunctions.OnPlantBombEventargs e)
-    {
-        if (!_hasBomb)
-        {
-            Vector3 bombPosition = new Vector3(transform.position.x, transform.position.y, 0);
-            GameObject newBomb = Instantiate(_bombPrefab, bombPosition, Quaternion.identity);
-            newBomb.GetComponent<Bomb>().Power = e.bombPower;
-            newBomb.GetComponent<Bomb>().Player = e.player;
-            newBomb.GetComponent<Bomb>().IsOneShot = e.player.IsOnFire;
-            e.player.AddBomb(newBomb);
-        }
-    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -33,7 +21,6 @@ public class Tile : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             players.Add(collision.gameObject);
-            collision.gameObject.GetComponent<PlayerFunctions>().OnPlantBomb += SpawnBomb;
         }
     }
 
@@ -47,7 +34,6 @@ public class Tile : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             players.Remove(collision.gameObject);
-            collision.gameObject.GetComponent<PlayerFunctions>().OnPlantBomb -= SpawnBomb;
         }
     }
 }

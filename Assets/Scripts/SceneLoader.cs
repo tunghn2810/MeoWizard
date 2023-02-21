@@ -1,11 +1,11 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 using static GameStateManager;
 using static GameplayManager;
+using static LevelManager;
 using static FadeCanvas;
 using static InputProcessor;
 
@@ -51,6 +51,11 @@ public class SceneLoader : MonoBehaviour
         {
             I_InputProcessor.OnSceneLoaded();
         }
+        else if (scene.name == "Victory")
+        {
+            I_InputProcessor.OnSceneLoaded();
+            I_LevelManager.OnVictory();
+        }
     }
 
     private void Start()
@@ -88,6 +93,16 @@ public class SceneLoader : MonoBehaviour
         if (I_GameStateManager.NextGameState == GameState.Gameplay)
         {
             I_GameStateManager.EnterGame();
+            I_GameStateManager.SetNextState(GameState.Loading);
+        }
+        else if (I_GameStateManager.NextGameState == GameState.MainMenu)
+        {
+            I_GameStateManager.EnterMenu();
+            I_GameStateManager.SetNextState(GameState.Loading);
+        }
+        else if (I_GameStateManager.NextGameState == GameState.Victory)
+        {
+            I_GameStateManager.EnterVictory();
             I_GameStateManager.SetNextState(GameState.Loading);
         }
     }
